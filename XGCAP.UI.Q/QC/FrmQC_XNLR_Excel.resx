@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="controlExprovider1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="dxSpreadsheetControlTemplateData1.Content" xml:space="preserve">
+    <value>峯疋㜀㒠㓀㗭團苡봵倯啪㒍끼㒀嫊㒀焀䁝䆌깺幅虫群볕䮼倥創䥶홽꿷헹㥮긺䭜衾㭡㹛느쉷㡄춌㵋滬孾蕬喴螨硅䊘䲖㭽矰㨸춽놦누硼췅탞뷂뎧즹堲쏵倴緝得穑䨂䰫읡잡졡緱朽쾏肙쓉乊猬䋩삿射칕曎娆㮹㣭橛䘵싾왹녣㭪䔡䄀㚓뚫殟갬硰칾쨃寫띋䥥䶎짠蟛塜嗔칤쟤겨睁檴녓椭穒㚉竲캂竍嫛펮㬛奾嶹㵼믦䡉뜬尹뷍埸薢敀䶗윽悂壕쳇槷뮭찄瓙囬슪횑蔦甎彺湸㠂䵎꿺叕瓏솙왾箰蕢摾뺥掑撠찟岚裒椇챉풄깫殨湦睵砗䏫舧픏뱹쐶甬椠㛫䌧暠촅栊蓕뒸畵싞䉺腪倻㰂놛薢챟빽哟뢪稺岛뛾檧䜀嗬痓퐆꼨잛꾑뾔㚳蘼恎炼摏栶涇瘷歘柏㤔歿嫹福翂㷐愍畓糳秭壟횹쁤焮䂕㘮䙔䏲뒣肭걞竑됋僔댞흆腸必㖺剆瀃燊衭皛톟즇펏粭栱뭋띰㶻뿸舌揅핱袉뜡㚿吆掇獃홠嚋澊油랣剃톙巎䪹톏窫켻碡읣兛횝킃眸䲜촠㓣盪휡㲎먹뭱呋㖆췲嵪룀嗲礫䟐㹙㸨眨撫嵛䍂㰔敆뱖㨌大뱵챣氼䨰稪㷹䱅䝲䈩奢湟舉엍劰섶㛊횿䣀琼㽡뛭웒枦芜熃愮槸쯆彣듅乂胛㖢囑뇢僬梒匫挏炗뙧匡嗰㔌䳴䔛㘙잴쏖썌닀븦衬筣퉍嗷確喬廾㶶쁣㭊㧀죎㜒䦣屈㚦㗣넎䂉簸畲귧塭珵큉록糮碎棾㗲㫴槒呻椮탂绠쨳䓖밿娼䃥㙇堾㨩㼐캑䠉떭멹櫥䡈硩蚻헼裵㚜䧦剾拣췺㥀眷憕헆场뽕璊於䰋㾣浥佺坓翿凜綬䛟䓥㟗䥅劇걻㥋塉樟쪣摲殱曽쌍둱굤래梡렾漒濳국彏읾돎쪃렌꾝匳왆悷혾悇䴒됣浗乛卢㷚星柆퓐懋煩彊㶭꺩伓㡼콦忐坋쮱䄊㱘맡礝㤡짞竚텒刼糳䀫벮쇻䠬횻妠檱枕뷳㝃絰쁺桢氵秕扳삵礄툵거徙头였缱嬒滃䋷畵쬞沼쏑蠣埊乙빻㥗꼕亦硌痠獖퉄嘅夥짫껛뾎석줬몸㡇䃶뱲莭귬닋㡩䵖픏瘐픈볲䠺後汣楟뼉껻校䣊繃㚇巰悥닜㕽划葩놽䚰챑葜䠷堟禈칟昬荷所뱖帑䈈媮뿊衹㿟훭䔻꼀혒虁㕠衡凛똌푛粁䡙붩蔳䜉꽰㻡뛋桫䃇槡㚂䴒㥭뤘茘팎哠桡腭叙胠䠍쎑뗾䫸랣벂繃嵪奛竗첖솒둲킘떼蕭孩掚뚺훮摖姅즢뾃䶲슇뿅뎱쉛䟆㘃䒭셿昰嗟䍋瀒䙶퓊㰉먷㟀엧彑걂嫅멁䅅핝흝庬둯꺀량瀂㚆枏禮崷㣶喾툯俽沍똂煝揷촵眬萱웅쓇냈㼭뫔뎬䬉㺇縭薊枬欳蠝攱잣胑䗛潚䌹浔㦋萃븦좙炡瀊씆싲冷앖팩앞烅気쩢뤽㡦嗨叺葕줛唴穠쬪헽䩦닍䭢昃绵抧咰媨휷룺縔굙㦗爱䧘뎙㴯퓰䘾珈菚훛께寄큙莁濓갌챃놠쫏沺佌惖㲨㒂㒄㒖쇈첓암艝떦㒀갦瓊㘠㒀㡃文뺌턐枃聨䈭舟嬵漺럄햹붟륅槔䨰㼈뿈蟸뙖硹㟆䪜盀墢菬꾏蔑첹듣䫱栾깇檆廘뷢쬡넳㡜씜풣䰴示퉆쒼㷊쬯홷㦕縖틊묩㰻猆㖻픎打捨勱姠喨䆅梟纥틈뽈脟㴹巣봠䄪㨡㓝浂븊싮爻蛪臂꺋煢寒縧耋奿裳륾娵礊㔑쨦葎噒茛翵걆䟀㠸䝏戰䎎림䐁꼲㴊풮䲨胴캌翤䡅況죑졂嫮套팻疙䵟佦堢즦쳝㸵弯癑㜝띷긼巶羝겕疉监빏合䮚푦亏慁澐犬稻뛱睿륊橎爋䡰뼹呫熷丠캰耘臙系癴뵫䙒뼶딙睁텏촍䶝뺡례羭昿감苡庈僡怐궠裌瘨瀴缦姎찛痚큄汯㜎浈潟쾅쇨寷㝐党后䙷蔡䃳沭泤䳎짍菫㸎볮쩥勲葉꺟긁畟죃匹통幃룗둧係쏹僺犪欹䩓팣碆징屬맯벌藮눡甒掱琒㜃뢛的꿺䝄澻츃竅廅憓뙷䝒䍇磛瑃眰搰냜薮니嘹컔됝佧蓩䃛䟯븨맡넊맒䈙䤵녑栆綥팛吐첨꾼䓐㒄㒈㒭褓셻찣佉䂀㒀쾥㒀㡀㒀㰆뤟땡뱺먓汿聨䈭綣㪊濚瓲穉瞨搚픜幔桫끞清㸉녇動媴滊䊴灉艎蒼䁒䆣悁拷저즃碙썟厹濼㱆㣏䛲㙶藋嘝搓箋䀊泉洐厄濅涆犉뀢歛榛㞂缲橧埼棼萈㖫떒뎑疓缀㭮핳㦏菸댂畟홢裘区绞袬薞렦뜍화잯䢺䇢䶱멐蜝萐숻弁룀흉䀥덝엯姂䰐䍻욘挼嬧㫇瓂륈룴㨽橆㠖膷쩋䬕䊇捓깤娅첢债㳈橢奧温㵬蒓嶨뢨芉덉툦惖㲨㒂㒄㒖쇈첅콶쐴背㒀䈁㒀㚠㒀㞣牗單윔湡끿연螱砵最坤莍䲈嘵맳仇眿㚂怒䚠忴㲭圛㹖彈엇젳欕쓽쐜㶋糜嗯㣔녕莆쾊웊滈킛붖땻뾱茡埕릭畒놬慖꼜嶚䱖퀶빉컚㥁甆球斫嗌䑚뷡繛哰쇁瓻籀쬙昸㘒쟘䓠庝룔察虮㭰娉먡㠹偡獷䠪椗샖搕祺苸狹쳭뀧쥜샃僕惞紓삪푑텈왏얗歘䴰玾섄뙡쾫劣㪕盡匢㮑渿냰챍뷶䳰랥퐝崾扰梏堌瀑빢귑䅫娼㧸狙膸燩帉쑬䣦륔꿜惞楀蒣뺚툧蝯仟湗㥆栤쁮夭榅䤣沆䱸멍硚훀䰫㶙杠䎻䶞吐皣컢玁헥廓擺啪㒈㒐㓛嵝袅슌뮑랤㒁峌㒀㺀㒀䎍矁倍㩉羒蠾淾댽옉뼪쌇욡켣䇽垁塚翷姡㾳툞닉器疓䔚肘岮蟼튎뉈샭舡嘮꽗걻䀌壓喌뙕깍䘒巺严쮗窓䅔옆끓呚戍벦昷푄윆㥈䬥檕뵩㤤숅尃䔚抓뺌芖竐䆼툒査嫎佝楽걼뚛罩候핼泄䚻䈾뮦㴞穨漻杒뗳抎䧝漈猕뱥兿픇暰쏥햍픱荡䗼늀큛旐揄뇕캐롟溾욣녯쯐䂝춟䏗漩뷳햷匁긆쏾옜兟滈澰옜쀌垯퉤崣㕀㺉擺啪㒈㒐㓛嵝衙䞰유擒㒃瓒㒀䂀㒀䎍矁灅繷빴봉漃肦쒰귻噓溫뉽䈔읛宖㜐춠摡챥혨哟薷奵爄罾칹渾잭怪梥㥾芡牌吲괽뀩㼐縹㖹햳袻킞壅펗傧띾砘蓴禙㘨涺猑렩䢌쾏헎䧹툷쨡萅䔯겧棼僕芦繷澞한䘢秗䬪籘䒆켖겮쑍偹深藟櫪怴䙅늤솶픣奜䆕䟵곰쀔徸샂뱍癌䬶瞥愮扶蚐涙毀繪솛굖伬톡㚅㤆샲瞒숵玮㨟苫먄俄꼝㿮虗㯲殊柏撿㜿㣸칅籼콰称쐧夳垰溋㟍乭棉戗퀵徦綼箐캓썷怺긱룟崰읿榾빓䍕듿後䗺줩崃䦖칻뿽笲쨵볋畒대傛擬嶮揧叵괼먗㽋䰥䀓춍揜䊥㳖茹荜㪩둈瑽玤壞蜃姴뗛悋惸硏䎖쨅璑兩緈랲맂꽢쾺쳱亮荓㰥뙒뉘腆蜩㭎쮫沷禋뙏蘍蒇춖䫔쉐뽌袸格쳕盂넗畔櫭丄㴦맟䡑㻼捳멮櫯뒈坩㸇冢뺨꼋䶔믲冰坧㹯篎汆乿臅텕떔붠꾉휤補렄瘊㒐㒠㔶藱尀簔牤䒀㒅擎㒀㾀㒀䱜腷篼턗繟낋䈐啱㕌噒늕䡎흪삺㼡尧툍簺聎㛁졳坣멬浯茐뤕쏥愌랥㼋쉶팣쮛흳㰽휊溎쏳䚒億쎿㿆㷁뾀盢凧뇓컔拁層宕帠崫밇괶姍쁾꽬쩪쳇嗹㮲蝧톺椤究뎪뺏䒟㤫덒嶉䅸䛍䕫잽뾄翻岡嬥쏒犺滽앿䌒絸꺠嵴慯攀紉儫煽嬱쭸廞㪯㡌뻻둫폣㼐쉡徏뭅垕佯녆碱䡇냡쇟猞葎폌뒟燆㜠翍㚊㒀瓋㒅눭刂罀볔半瓊㘀瓊㔘㒀㔶砹氄严荕쳫聍䩍漦퀑欠겗床埛㡴긽搮扂䳣惦㺕챎䗺皧葽㭾蝘磱녔淈嘣뤒㷐瘀㚗尷千뜛옾淉獉箝눾능嫷厾蚺緙削굢싛䰼祰쏴쒞濢뛚㔉㵪帮꺕䊕欜螟畴䚾甛蠂찎갱녨뒩廠槑煤篡넝塺夂䩘淂枈硭㿃欚쫵쌟䤎晓놁㿬伯恚궫姶碓뵯쇣䧢얄裣嶎舲湯㒁莮喎뻢羶䧿盫돩솾쑊䖟㼒붻䟯䫮叠꾒㿱茼랷펊聲䭒듑䫊坏㣕䠋哕圁䔢녈이晊漴쎻嶶텠癭췌䛮㭒蝗쭍䰺徢蝋픲糽熂皙캵쥆䂒뽸癫폫冸日뾻捬䴀痡情牀纕搓쫜瑤힑잠톡똭빣叆畞㷠攋哊㲀䒀답䠧䮱幾떴㒀㜸㢀㒚㒀㒞䈅춛䞫暖뚒윖橻傥씉뼪쌅溓羢쭑巪더竌䑈굓딼孾곹瞺찦튖뢙笻伃䕙肅눖닫䎂嫄瓲糚䟂匼냗橘븇採䁼롡횲똡庻䀞㘪겼䖓燙炼깧怗店슩옍홄웈흔촵役焵䲱儑滯뇜䈆穒쨝삦懰㶦㿑礴츆披궺䱌晰떩杧橲侜곻蔵掜哄䕤옾뾌䕬灚聧窈㛺崫쐯䗆孾䚍䁅煇㼈괄惹뛳世膍넙먏쇝윮䑿茝퓈쾍樉렽헲䔒푀댥丏퇯巩悦垶瑳䒳玃떆㯐婊畏㒂瓊䒀哋歬尘䁥絥杪蓊㭘쎤㒦㒀㒀㒀㒀㒀㒀㒀㒀㒀焀䁝䆌깺幅虫群볕䮼倥㺉據䔠㓐㒄㒈㒭褓솃댅俱烎㒁巏㒀㟀㒀㒀㒀㒀㒀㒀㓣㗀㒏㭂팿蚯끮쫒焀늸㷠䒡哊蓊㢀㲀扲纝꾌훘횼㒀㕰㖀㒇瓊㒀㒀㒀㒀㒀㒀잧瓊䎍矁灅繷禨윏䮼倥㺉據䔠㓐㒄㒈㒭褓셧읉냅䲄㒀俌㒀㣀㒀㒀㒀㒀㒀㒀㓸㚀㒌節位纇뢊搭沃丕菗깩㛘㢈峊䢀㖀㚀㿪䛴켞뒼한㒀㒪㓀㒂瓊㒀㒀㒀㒀㒀㒀㴡哊㡃文빴뤖杼䥝䋍䭦灣溫뉼蔕㔁㦀㜀㒠㓀㗭團茆膍犻瓪㒎㒠㒀擊㒀㒀㒀㒀㒀㒀㗌䪀㓸櫡땿엱氀矵䩑븂쬌杼뒰媙㭖먦惎㢨㒔㒁㒂㒋槜漽椾袣藊㒀忊哊㔰㒀㒀㒀㒀㒀㒀㒉존㒂항羢쫓䮹严䋪㤰㲐蓊峊㚀㢀䭔妳맷닍疾㚀㒌㚀㒄랤㒀㒀㒀㒀㒀㒀䛃瓊㨴偅溛羦찃弆뎽挵螱砵昋䪂㚔㒊㒀瓋㒅눭刃湔良젤㒀䩀哊㕐㒀㒀㒀㒀㒀㒀㒋浂㒁졼搩淼닀붒캛䟛㸽뙺捂殀䀜腷篿㛘䢘㒀㒀㤀㛀㳀哊㬀瓊㒀㐀</value>
+  </data>
+  <metadata name="spreadsheetManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>181, 17</value>
+  </metadata>
+</root>

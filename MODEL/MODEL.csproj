@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5AD207CC-7FA4-4B7C-BBE5-5EF48BEAF9EA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MODEL</RootNamespace>
+    <AssemblyName>MODEL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="B\Mod_TB_AUTO_SYNC_USER.cs" />
+    <Compile Include="B\Mod_TB_BC.cs" />
+    <Compile Include="B\Mod_TB_BCBZ.cs" />
+    <Compile Include="B\Mod_TB_BCBZGZ.cs" />
+    <Compile Include="B\Mod_TB_BZ.cs" />
+    <Compile Include="B\Mod_TB_CONFIG_LIMIT.cs" />
+    <Compile Include="B\Mod_TB_CONFIG_PERCENTAGE.cs" />
+    <Compile Include="B\Mod_TB_ITEM_TYPE.cs" />
+    <Compile Include="B\Mod_TB_LOG.cs" />
+    <Compile Include="B\Mod_TB_MATRL_CONTRAST.cs" />
+    <Compile Include="B\Mod_TB_NCIF_LOG.cs" />
+    <Compile Include="B\Mod_TB_NOT_LIMIT.cs" />
+    <Compile Include="B\Mod_TB_PLAN_OPERATION_LOG.cs" />
+    <Compile Include="B\Mod_TB_REHEATING_FURNACE.cs" />
+    <Compile Include="B\Mod_TB_RF_SYNCWGT_LOG.cs" />
+    <Compile Include="B\Mod_TB_SLAB_MATRAL.cs" />
+    <Compile Include="B\Mod_TB_STD_CONFIG.cs" />
+    <Compile Include="B\Mod_TB_LG_PLAN_LOG.cs" />
+    <Compile Include="B\Mod_TB_LG_PLAN_EDIT_LOG.cs" />
+    <Compile Include="B\Mod_TB_ZG_PLAN_LOG.cs" />
+    <Compile Include="I\Mod_ReZJB_FYD.cs" />
+    <Compile Include="I\Mod_ReZJB_GPD.cs" />
+    <Compile Include="I\Mod_ReZJB_PDD.cs" />
+    <Compile Include="I\Mod_ReZJB_PDD_Item.cs" />
+    <Compile Include="I\Mod_ReZJB_WGD.cs" />
+    <Compile Include="I\Mod_ReZJB_WGD_Item.cs" />
+    <Compile Include="I\Mod_ReZJB_ZKD.cs" />
+    <Compile Include="I\Mod_SeZJB_FYD_finished.cs" />
+    <Compile Include="I\Mod_SeZJB_PDD_FINISHED.cs" />
+    <Compile Include="I\Mod_SeZJB_Shift_Record.cs" />
+    <Compile Include="I\Mod_SeZJB_WGD_Finished.cs" />
+    <Compile Include="I\Mod_SeZJB_ZKD_finished.cs" />
+    <Compile Include="I\Mod_WMS_Bms_Inv_Info.cs" />
+    <Compile Include="I\Mod_WMS_Bms_Inv_OutInfo.cs" />
+    <Compile Include="I\Mod_WMS_Bms_Rec_WGD.cs" />
+    <Compile Include="I\Mod_WMS_Bms_Tra_ZKD.cs" />
+    <Compile Include="I\Mod_WMS_Bms_Tra_ZKD_Detail.cs" />
+    <Compile Include="I\Mod_WMS_Bms_Tra_ZKD_Item.cs" />
+    <Compile Include="I\Mod_WMS_Bms_Tra_ZKD_Total.cs" />
+    <Compile Include="I\Mod_ZKD_NC.cs" />
+    <Compile Include="I\NcRoll46.cs" />
+    <Compile Include="I\NcRollA1.cs" />
+    <Compile Include="I\NcRollA2.cs" />
+    <Compile Include="I\NcRollA3.cs" />
+    <Compile Include="I\NcRollA4.cs" />
+    <Compile Include="M\Mod_TMB_AREAMAX.cs" />
+    <Compile Include="M\Mod_TMD_DISPATCH.cs" />
+    <Compile Include="M\Mod_TMD_DISPATCHDETAILS.cs" />
+    <Compile Include="M\Mod_TMO_CONDETAILS.cs" />
+    <Compile Include="M\Mod_TMO_ORDER.cs" />
+    <Compile Include="M\Mod_TMO_ORDER_PJ_LOG.cs" />
+    <Compile Include="M\Mod_TMP_DAYPLAN.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="B\Mod_TB_MATERIAL_COST.cs" />
+    <Compile Include="B\Mod_TB_MATRL_MAIN.cs" />
+    <Compile Include="B\Mod_TB_PRO.cs" />
+    <Compile Include="B\Mod_TB_STA.cs" />
+    <Compile Include="M\Mod_TMB_AREA.cs" />
+    <Compile Include="M\Mod_TMB_CON_TOL.cs" />
+    <Compile Include="M\Mod_TMB_QUEST_TYPE.cs" />
+    <Compile Include="M\Mod_TME_EMP_REPORT.cs" />
+    <Compile Include="P\DTOS\LCLSBHelper.cs" />
+    <Compile Include="P\DTOS\Mod_TPP_LGPC_LCLSB.cs" />
+    <Compile Include="P\DTOS\Mod_TPP_LGPC_LSB.cs" />
+    <Compile Include="P\Mod_APS_CONFIG.cs" />
+    <Compile Include="P\Mod_Order_Matral.cs" />
+    <Compile Include="P\Mod_TPA_DHL_PLAN.cs" />
+    <Compile Include="P\Mod_TPA_HL_ACT.cs" />
+    <Compile Include="P\Mod_TPA_HL_PLAN.cs" />
+    <Compile Include="P\Mod_TPA_KP_ACT.cs" />
+    <Compile Include="P\Mod_TPA_KP_PLAN.cs" />
+    <Compile Include="P\Mod_TPA_ROLL_ACT_PLAN.cs" />
+    <Compile Include="P\Mod_TPA_ROLL_PLAN.cs" />
+    <Compile Include="P\Mod_TPA_SLAB_IN_PLAN.cs" />
+    <Compile Include="P\Mod_TPA_SLAB_USE_PLAN.cs" />
+    <Compile Include="P\Mod_TPA_TS_PLAN.cs" />
+    <Compile Include="P\Mod_TPA_XM_ACT.cs" />
+    <Compile Include="P\Mod_TPA_XM_PLAN.cs" />
+    <Compile Include="P\Mod_TPB_BORDER_GRD.cs" />
+    <Compile Include="P\Mod_TPB_BXGXMGZ.cs" />
+    <Compile Include="P\Mod_TPB_CAST_STOVE.cs" />
+    <Compile Include="P\Mod_TPB_CAST_STOVE_WGT.cs" />
+    <Compile Include="P\Mod_TPB_CAST_TIME.cs" />
+    <Compile Include="P\Mod_TPB_CCM_CONTRAST.cs" />
+    <Compile Include="P\Mod_TPB_CC_CHANGE_TIME.cs" />
+    <Compile Include="P\Mod_TPB_CHANGESPEC_TIME.cs" />
+    <Compile Include="P\Mod_TPB_COOLPIT.cs" />
+    <Compile Include="P\Mod_TPB_COOLPIT_AREA.cs" />
+    <Compile Include="P\Mod_TPB_COOLPIT_LOC.cs" />
+    <Compile Include="P\Mod_TPB_COOLPIT_TIER.cs" />
+    <Compile Include="P\Mod_TPB_ENDTOEND_GRD.cs" />
+    <Compile Include="P\Mod_TPB_FURNACE_TIME.cs" />
+    <Compile Include="P\Mod_TPB_GL_CAPACITY.cs" />
+    <Compile Include="P\Mod_TPB_HOOK.cs" />
+    <Compile Include="P\Mod_TPB_IRON_PLAN.cs" />
+    <Compile Include="P\Mod_TPB_JRLTJ.cs" />
+    <Compile Include="P\Mod_TPB_LADLE.cs" />
+    <Compile Include="P\Mod_TPB_LGGYK.cs" />
+    <Compile Include="P\Mod_TPB_LGJH.cs" />
+    <Compile Include="P\Mod_TPB_LINEWH.cs" />
+    <Compile Include="P\Mod_TPB_LINEWH_AREA.cs" />
+    <Compile Include="P\Mod_TPB_LINEWH_LOC.cs" />
+    <Compile Include="P\Mod_TPB_LINEWH_TIER.cs" />
+    <Compile Include="P\Mod_TPB_LINE_SPEC.cs" />
+    <Compile Include="P\Mod_TPB_MATRL_CONTRAST.cs" />
+    <Compile Include="P\Mod_TPB_MIXTURE_TIME.cs" />
+    <Compile Include="P\Mod_TPB_N_GRD.cs" />
+    <Compile Include="P\Mod_TPB_REPLACE_GRD.cs" />
+    <Compile Include="P\Mod_TPB_RINSE_GRD.cs" />
+    <Compile Include="P\Mod_TPB_ROLLXM.cs" />
+    <Compile Include="P\Mod_TPB_SCLX.cs" />
+    <Compile Include="P\Mod_TPB_SLABWH.cs" />
+    <Compile Include="P\Mod_TPB_SLABWH_AREA.cs" />
+    <Compile Include="P\Mod_TPB_SLABWH_LOC.cs" />
+    <Compile Include="P\Mod_TPB_SLABWH_TIER.cs" />
+    <Compile Include="P\Mod_TPB_SLAB_ALLOT.cs" />
+    <Compile Include="P\Mod_TPB_SLAB_CAPACITY.cs" />
+    <Compile Include="P\Mod_TPB_STATION_CAPACITY.cs" />
+    <Compile Include="P\Mod_TPB_STA_CN.cs" />
+    <Compile Include="P\Mod_TPB_STA_HISTORY_CAP.cs" />
+    <Compile Include="P\Mod_TPB_STA_HOOK_NO.cs" />
+    <Compile Include="P\Mod_TPB_STA_HOOK_NUM.cs" />
+    <Compile Include="P\Mod_TPB_STA_MOVETIME.cs" />
+    <Compile Include="P\Mod_TPB_STA_WH.cs" />
+    <Compile Include="P\Mod_TPB_STEEL_PRO_CONDITION.cs" />
+    <Compile Include="P\Mod_TPB_STEEL_SMELT_TIME.cs" />
+    <Compile Include="P\Mod_TPB_TRANSITION_GRD.cs" />
+    <Compile Include="P\Mod_TPB_WASTE_RATIO.cs" />
+    <Compile Include="P\Mod_TPB_Y_GRD.cs" />
+    <Compile Include="P\Mod_TPC_ORDER_SEQ.cs" />
+    <Compile Include="P\Mod_TPC_PLAN_ROLL.cs" />
+    <Compile Include="P\Mod_TPC_PLAN_SMS.cs" />
+    <Compile Include="P\Mod_TPO_GPKWT_LAB.cs" />
+    <Compile Include="P\Mod_TPO_XCKWT_LAB.cs" />
+    <Compile Include="P\Mod_TPP_CAST.cs" />
+    <Compile Include="P\Mod_TPP_INITIALIZE_ITEM.cs" />
+    <Compile Include="P\Mod_TPP_INITIALIZE_LINE.cs" />
+    <Compile Include="P\Mod_TPP_INITIALIZE_ORDER.cs" />
+    <Compile Include="P\Mod_TPP_INITIALIZE_PRO_CAP.cs" />
+    <Compile Include="P\Mod_TPP_INITIALIZE_STA.cs" />
+    <Compile Include="P\Mod_TPP_LGPC_LCLSB.cs" />
+    <Compile Include="P\Mod_TPP_LGPC_LSB.cs" />
+    <Compile Include="P\Mod_TPP_PRODUCTION_PLAN.cs" />
+    <Compile Include="P\Mod_TPP_PROD_INITIALIZE.cs" />
+    <Compile Include="P\Mod_TPP_SLAB_PLAN_KP.cs" />
+    <Compile Include="P\Mod_TPP_SLAB_PLAN_XM.cs" />
+    <Compile Include="P\Mod_TPP_TURNAROUND_PLAN.cs" />
+    <Compile Include="P\Mod_TPP_CAST_PLAN.cs" />
+    <Compile Include="P\Mod_V_LGJC_PC.cs" />
+    <Compile Include="Q\Mod_TQB_CHARACTER.cs" />
+    <Compile Include="Q\Mod_TQB_CHECKSTATE.cs" />
+    <Compile Include="Q\Mod_TQB_CHECKTYPE.cs" />
+    <Compile Include="Q\Mod_TQB_COOL.cs" />
+    <Compile Include="Q\Mod_TQB_COOL_BASIC.cs" />
+    <Compile Include="Q\Mod_TQB_COPING.cs" />
+    <Compile Include="Q\Mod_TQB_COPING_BASIC.cs" />
+    <Compile Include="Q\Mod_TQB_DESIGN.cs" />
+    <Compile Include="Q\Mod_TQB_DESIGN_ITEM.cs" />
+    <Compile Include="Q\Mod_TQB_DESIGN_ITEM_LOG.cs" />
+    <Compile Include="Q\Mod_TQB_DESIGN_ORDER.cs" />
+    <Compile Include="Q\Mod_TQB_FAULT_REASON_DETAILS.cs" />
+    <Compile Include="Q\Mod_TQB_FAULT_REASON_TYPE.cs" />
+    <Compile Include="Q\Mod_TQB_FAULT_STATISTICS.cs" />
+    <Compile Include="Q\Mod_TQB_GZ_CHECK.cs" />
+    <Compile Include="Q\Mod_TQB_PACK.cs" />
+    <Compile Include="Q\Mod_TQB_PHYSICS_CONFIGURE.cs" />
+    <Compile Include="Q\Mod_TQB_PHYSICS_EQUIPMENT.cs" />
+    <Compile Include="Q\Mod_TQB_PHYSICS_GROUP.cs" />
+    <Compile Include="Q\Mod_TQB_PHYSICS_GROUP_STD.cs" />
+    <Compile Include="Q\Mod_TQB_PHYSICS_QUALITATIVE.cs" />
+    <Compile Include="Q\Mod_TQB_REPLACE_SLAB.cs" />
+    <Compile Include="Q\Mod_TQB_RINSE_TANK_GRD.cs" />
+    <Compile Include="Q\Mod_TQB_ROUTE.cs" />
+    <Compile Include="Q\Mod_TQB_SAMPLING.cs" />
+    <Compile Include="Q\Mod_TQB_SAMPLING_GROUP.cs" />
+    <Compile Include="Q\Mod_TQB_SLAB_LEN.cs" />
+    <Compile Include="Q\Mod_TQB_SLAB_LEN_MATCH.cs" />
+    <Compile Include="Q\Mod_TQB_STD_CFXN.cs" />
+    <Compile Include="Q\Mod_TQB_STD_FILE.cs" />
+    <Compile Include="Q\Mod_TQB_STD_FILE_TYPE.cs" />
+    <Compile Include="Q\Mod_TQB_STD_MAIN.cs" />
+    <Compile Include="Q\Mod_TQB_STD_SAMPLING.cs" />
+    <Compile Include="Q\Mod_TQB_STD_SPEC.cs" />
+    <Compile Include="Q\Mod_TQB_STD_TYPE.cs" />
+    <Compile Include="Q\Mod_TQB_STL_GRD_NAME.cs" />
+    <Compile Include="Q\Mod_TQB_STL_GRD_TYPE.cs" />
+    <Compile Include="Q\Mod_TQB_TRUCK.cs" />
+    <Compile Include="Q\Mod_TQB_TSBZ_CF.cs" />
+    <Compile Include="Q\Mod_TQB_TSBZ_MAIN.cs" />
+    <Compile Include="Q\Mod_TQB_WAREHOUSE_CAUSE.cs" />
+    <Compile Include="Q\Mod_TQB_WAREHOUSE_CAUSE_OPINION.cs" />
+    <Compile Include="Q\Mod_TQB_XN_CHECK_PROCEDURE.cs" />
+    <Compile Include="Q\Mod_TQC_COMPRE_ITEM_RESULT.cs" />
+    <Compile Include="Q\Mod_TQC_FACE_ROLL.cs" />
+    <Compile Include="Q\Mod_TQC_FACE_ROLL_LOG.cs" />
+    <Compile Include="Q\Mod_TQC_FACE_SLAB.cs" />
+    <Compile Include="Q\Mod_TQC_FACE_SLAB_LOG.cs" />
+    <Compile Include="Q\Mod_TQC_PHYSICS_RESULT.cs" />
+    <Compile Include="Q\Mod_TQC_PHYSICS_RESULT_MAIN.cs" />
+    <Compile Include="Q\Mod_TQC_PRESENT_SAMPLES.cs" />
+    <Compile Include="Q\Mod_TQC_PRESENT_SAMPLES_JSZX.cs" />
+    <Compile Include="Q\Mod_TQC_PRESENT_SAMPLES_NAME.cs" />
+    <Compile Include="Q\Mod_TQC_RATING_PROCESS.cs" />
+    <Compile Include="Q\Mod_TQC_RATING_PROCESS_ITEM.cs" />
+    <Compile Include="Q\Mod_TQC_RECHECK.cs" />
+    <Compile Include="Q\Mod_TQC_RESULT_MAIN_ZJB.cs" />
+    <Compile Include="Q\Mod_TQC_ROLL_COMMUTE.cs" />
+    <Compile Include="Q\Mod_TQC_ROOL_CHECK_AFFIRM.cs" />
+    <Compile Include="Q\Mod_TQC_SLAB_COMMUTE.cs" />
+    <Compile Include="Q\Mod_TQC_SPECIFIC_CONTENT.cs" />
+    <Compile Include="Q\Mod_TQC_SPECIFIC_CONTENT_LOG.cs" />
+    <Compile Include="Q\Mod_TQC_TP_SLAB_COMMUTE.cs" />
+    <Compile Include="Q\Mod_TQC_UPDATE_MATERIAL.cs" />
+    <Compile Include="Q\Mod_TQC_UPDATE_MATERIAL_LOG.cs" />
+    <Compile Include="Q\Mod_TQC_UPD_MATERIAL_MAIN.cs" />
+    <Compile Include="Q\Mod_TQC_WAREHOUSE_CHECK_ROLL.cs" />
+    <Compile Include="Q\Mod_TQC_WAREHOUSE_CHECK_SLAB.cs" />
+    <Compile Include="Q\Mod_TQC_WE_CHECK_AFFIRM.cs" />
+    <Compile Include="Q\Mod_TQR_FAULT_STA_ROLL.cs" />
+    <Compile Include="Q\Mod_TQR_FAULT_STA_SLAB.cs" />
+    <Compile Include="Q\Mod_TQR_GRADE.cs" />
+    <Compile Include="Q\Mod_TQR_REJECTS.cs" />
+    <Compile Include="Q\Mod_TQC_QUA_RESULT.cs" />
+    <Compile Include="Q\Mod_TQB_GP_LCP_BASIS.cs" />
+    <Compile Include="Q\Mod_TQC_COMPRE_ROLL.cs" />
+    <Compile Include="Q\Mod_TQC_COMPRE_SLAB.cs" />
+    <Compile Include="Q\Mod_TQR_ZBS_ITEM.cs" />
+    <Compile Include="Q\Mod_TQC_PHYSICS_RESULT_LOG.cs" />
+    <Compile Include="Q\Mod_TQC_QUA_RESULT_LOG.cs" />
+    <Compile Include="Q\Mod_TQB_SAMP_ITEM_MODLE.cs" />
+    <Compile Include="Q\Mod_TQB_SAMP_MODLE.cs" />
+    <Compile Include="Q\Mod_TQB_SAMP_ITEM_MODLE_JSZX.cs" />
+    <Compile Include="Q\Mod_TQB_SAMP_MODLE_JSZX.cs" />
+    <Compile Include="Q\Mod_TQB_ZZS_PRINT_MODLE.cs" />
+    <Compile Include="Q\Mod_TQB_ZZS_PRINT_ROWNUM.cs" />
+    <Compile Include="Q\Mod_TQC_ZZS_INFO.cs" />
+    <Compile Include="Q\Mod_TQB_XN_CHECK_USER.cs" />
+    <Compile Include="R\CommonKC.cs" />
+    <Compile Include="R\Mod_SLAB_INFO.cs" />
+    <Compile Include="R\Mod_TRC_COGDOWN_LOG.cs" />
+    <Compile Include="R\Mod_TRC_COGDOWN_MAIN.cs" />
+    <Compile Include="R\Mod_TRC_COGDOWN_MAIN_ITEM.cs" />
+    <Compile Include="R\Mod_TRC_COGDOWN_PRODUCT.cs" />
+    <Compile Include="R\Mod_TRC_COGDOWN_PRODUCT_LOG.cs" />
+    <Compile Include="R\Mod_TRC_ENERGY_RECORD.cs" />
+    <Compile Include="R\Mod_TRC_PLAN_REGROUND.cs" />
+    <Compile Include="R\Mod_TRC_PLAN_REGROUND_HANDLER.cs" />
+    <Compile Include="R\Mod_TRC_PLAN_REGROUND_ITEM.cs" />
+    <Compile Include="R\Mod_TRC_PRODUCTION_IMPACT.cs" />
+    <Compile Include="R\Mod_TRC_ROLL_LOG.cs" />
+    <Compile Include="R\Mod_TRC_ROLL_MAIN.cs" />
+    <Compile Include="R\Mod_TRC_ROLL_MAIN_CLOSE_LOG.cs" />
+    <Compile Include="R\Mod_TRC_ROLL_MAIN_ITEM.cs" />
+    <Compile Include="R\Mod_TRC_ROLL_PRODCUT.cs" />
+    <Compile Include="R\Mod_TRC_ROLL_QTCKD.cs" />
+    <Compile Include="R\Mod_TRC_ROLL_QTCKD_ITEM.cs" />
+    <Compile Include="R\Mod_TRC_ROLL_SPOT_CHECK.cs" />
+    <Compile Include="R\Mod_TRC_ROLL_SPOT_CHECK_NAME.cs" />
+    <Compile Include="R\Mod_TRC_ROLL_STORAGE_LOG.cs" />
+    <Compile Include="R\Mod_TRC_ROLL_WGD.cs" />
+    <Compile Include="R\Mod_TRC_ROLL_WGD_HANDLER.cs" />
+    <Compile Include="R\Mod_TRC_ROLL_WGD_HANDLER_LOG.cs" />
+    <Compile Include="R\Mod_TRC_ROLL_WGD_ITEM.cs" />
+    <Compile Include="R\Mod_TRC_ROLL_WGD_ITEM_LOG.cs" />
+    <Compile Include="R\Mod_TRC_ROLL_WGD_LOG.cs" />
+    <Compile Include="R\Mod_TRC_ROLL_ZKD.cs" />
+    <Compile Include="R\Mod_TRC_SLABWH_LOG.cs" />
+    <Compile Include="R\Mod_TRC_WARM_FURNACE.cs" />
+    <Compile Include="R\Mod_TRC_WARM_FURNACE_LOG.cs" />
+    <Compile Include="R\Mod_TRP_PLAN_COGDOWN.cs" />
+    <Compile Include="R\Mod_TRP_PLAN_ITEM.cs" />
+    <Compile Include="R\Mod_TRP_PLAN_ROLL.cs" />
+    <Compile Include="R\Mod_TRP_PLAN_ROLL_ITEM.cs" />
+    <Compile Include="R\Mod_TRP_PLAN_ROLL_ITEM_INFO.cs" />
+    <Compile Include="R\Mod_TRP_PLAN_ROLL_ITEM_INFO_LOG.cs" />
+    <Compile Include="R\Mod_TRP_PLAN_SLAB_TIME.cs" />
+    <Compile Include="R\Mod_TRC_ROLL_PDD.cs" />
+    <Compile Include="R\Mod_TRC_ROLL_PDD_ITEM.cs" />
+    <Compile Include="R\Mod_TRC_ROLL_TIME.cs" />
+    <Compile Include="R\Mod_TRP_PLAN_REASON.cs" />
+    <Compile Include="R\Mod_TRP_WGD_ITEMINFO.cs" />
+    <Compile Include="R\Mod_TRP_PLAN_ITEM_LOG.cs" />
+    <Compile Include="S\Mod_TSC_ALLOT_CENTER.cs" />
+    <Compile Include="S\Mod_TSC_ALLOT_LOG.cs" />
+    <Compile Include="S\Mod_TSC_SLAB_NC.cs" />
+    <Compile Include="S\Mod_TSC_SLAB_MAIN.cs" />
+    <Compile Include="S\Mod_TSC_SLAB_MAIN_KP.cs" />
+    <Compile Include="S\Mod_TSC_SLAB_MAIN_LOG.cs" />
+    <Compile Include="S\Mod_TSC_SLAB_MAIN_XM.cs" />
+    <Compile Include="S\Mod_TSP_CAST_PLAN.cs" />
+    <Compile Include="S\Mod_TSP_CAST_PLAN_LOG.cs" />
+    <Compile Include="S\Mod_TSP_PLAN_SMS.cs" />
+    <Compile Include="S\Mod_TSP_PLAN_SMS_LOG.cs" />
+    <Compile Include="S\Mod_TS_COMMON_COLUMN_INFO.cs" />
+    <Compile Include="S\Mod_TS_CUSTFILE.cs" />
+    <Compile Include="S\Mod_TS_DEPT.cs" />
+    <Compile Include="S\Mod_TS_MODULE.cs" />
+    <Compile Include="S\Mod_TS_ORG.cs" />
+    <Compile Include="S\Mod_TS_TABLE_INFO.cs" />
+    <Compile Include="Q\Mod_TQB_GRADE_RULE.cs" />
+    <Compile Include="Q\Mod_TQB_GRADE_RULE_STD.cs" />
+    <Compile Include="S\Mod_TSP_PLAN_SMS_ITEM.cs" />
+    <Compile Include="S\Mod_TS_SERVER_CONFIG.cs" />
+    <Compile Include="S\Mod_TSC_SLAB_MOVE.cs" />
+    <Compile Include="S\Mod_TS_USER.cs" />
+    <Compile Include="S\Mod_TSC_SLAB_STACK.cs" />
+    <Compile Include="S\Mod_TSC_SLAB_MES.cs" />
+    <Compile Include="S\Mod_TSC_STOVE_TIME.cs" />
+    <Compile Include="S\Mod_TSC_SLAB_MES_LOG.cs" />
+    <Compile Include="TEST\Mod_TPP_LGPC_LCLSB_TEST.cs" />
+    <Compile Include="TEST\Mod_TPP_LGPC_LSB_TEST.cs" />
+    <Compile Include="TEST\Mod_TRP_PLAN_ITEM_TEST.cs" />
+    <Compile Include="TEST\Mod_TRP_PLAN_ROLL_TEST.cs" />
+    <Compile Include="TEST\Mod_TSP_PLAN_SMS_TEST.cs" />
+    <Compile Include="TEST\Mod_TSP_CAST_PLAN_TEST.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

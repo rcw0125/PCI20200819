@@ -1,0 +1,701 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CBB21895-17AD-42BC-BF7C-87CE1D95B627}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>XGCAP.UI.R</RootNamespace>
+    <AssemblyName>XGCAP.UI.R</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells, Version=5.3.1.0, Culture=neutral, PublicKeyToken=9ec0ff091d04b091, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\XGPCI\NeedDll\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v17.2.Core, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v17.2.Core, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v17.2.Export, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v17.2.Core, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v17.2.Core, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Charts.v17.2.Core, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.2.Wizard, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v17.2.Core, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v17.2.UI, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v17.2.Extensions, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="RV.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RV.UI\bin\Debug\RV.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RA\FrmRA_DB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RA\FrmRA_DB.Designer.cs">
+      <DependentUpon>FrmRA_DB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RA\FrmRA_FK_OLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RA\FrmRA_FK_OLD.Designer.cs">
+      <DependentUpon>FrmRA_FK_OLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RA\FrmRA_FK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RA\FrmRA_FK.Designer.cs">
+      <DependentUpon>FrmRA_FK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RA\FrmRA_DD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RA\FrmRA_DD.Designer.cs">
+      <DependentUpon>FrmRA_DD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RA\FrmRA_GPGZCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RA\FrmRA_GPGZCX.Designer.cs">
+      <DependentUpon>FrmRA_GPGZCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RA\FrmRA_KPFK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RA\FrmRA_KPFK.Designer.cs">
+      <DependentUpon>FrmRA_KPFK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RA\FrmRA_RK_OLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RA\FrmRA_RK_OLD.Designer.cs">
+      <DependentUpon>FrmRA_RK_OLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RA\FrmRA_RK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RA\FrmRA_RK.Designer.cs">
+      <DependentUpon>FrmRA_RK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RA\FrmRA_TC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RA\FrmRA_TC.Designer.cs">
+      <DependentUpon>FrmRA_TC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RA\FrmRA_ZC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RA\FrmRA_ZC.Designer.cs">
+      <DependentUpon>FrmRA_ZC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RC\FrmRC_TBWGD4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RC\FrmRC_TBWGD4.Designer.cs">
+      <DependentUpon>FrmRC_TBWGD4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RC\FrmRC_TBWGD5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RC\FrmRC_TBWGD5.Designer.cs">
+      <DependentUpon>FrmRC_TBWGD5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RC\FrmRC_TBWGD_INNER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RC\FrmRC_TBWGD_INNER.Designer.cs">
+      <DependentUpon>FrmRC_TBWGD_INNER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RC\FrmRC_TSXX_CANCLE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RC\FrmRC_TSXX_CANCLE.Designer.cs">
+      <DependentUpon>FrmRC_TSXX_CANCLE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RC\FrmRC_TSXX_ADD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RC\FrmRC_TSXX_ADD.Designer.cs">
+      <DependentUpon>FrmRC_TSXX_ADD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RC\FrmRC_GZGG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RC\FrmRC_GZGG.Designer.cs">
+      <DependentUpon>FrmRC_GZGG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RC\FrmRC_JRLGL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RC\FrmRC_JRLGL.Designer.cs">
+      <DependentUpon>FrmRC_JRLGL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RC\FrmRC_KPJRLGL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RC\FrmRC_KPJRLGL.Designer.cs">
+      <DependentUpon>FrmRC_KPJRLGL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RC\FrmRC_TBKPSJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RC\FrmRC_TBKPSJ.Designer.cs">
+      <DependentUpon>FrmRC_TBKPSJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RC\FrmRC_TBKPSJ2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RC\FrmRC_TBKPSJ2.Designer.cs">
+      <DependentUpon>FrmRC_TBKPSJ2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RC\FrmRC_TBKPSJ3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RC\FrmRC_TBKPSJ3.Designer.cs">
+      <DependentUpon>FrmRC_TBKPSJ3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RC\FrmRC_TBKPSJ4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RC\FrmRC_TBKPSJ4.Designer.cs">
+      <DependentUpon>FrmRC_TBKPSJ4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RC\FrmRC_TBWGD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RC\FrmRC_TBWGD.Designer.cs">
+      <DependentUpon>FrmRC_TBWGD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RC\FrmRC_TBWGD2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RC\FrmRC_TBWGD2.Designer.cs">
+      <DependentUpon>FrmRC_TBWGD2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RC\FrmRC_TBWGD3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RC\FrmRC_TBWGD3.Designer.cs">
+      <DependentUpon>FrmRC_TBWGD3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RC\FrmRC_WGD_CX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RC\FrmRC_WGD_CX.Designer.cs">
+      <DependentUpon>FrmRC_WGD_CX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RC\FrmRC_ZGWGJL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RC\FrmRC_ZGWGJL.Designer.cs">
+      <DependentUpon>FrmRC_ZGWGJL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RC\FrmRF_TBRFWGT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RC\FrmRF_TBRFWGT.Designer.cs">
+      <DependentUpon>FrmRF_TBRFWGT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RC\FrmRF_TBTKXX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RC\FrmRF_TBTKXX.Designer.cs">
+      <DependentUpon>FrmRF_TBTKXX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RC\FrmRF_ZGWGD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RC\FrmRF_ZGWGD.Designer.cs">
+      <DependentUpon>FrmRF_ZGWGD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RC\FrmRF_ZGWGDCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RC\FrmRF_ZGWGDCH.Designer.cs">
+      <DependentUpon>FrmRF_ZGWGDCH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RP\FrmRP_AutoSyncUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RP\FrmRP_AutoSyncUser.Designer.cs">
+      <DependentUpon>FrmRP_AutoSyncUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RP\FrmRP_CCL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RP\FrmRP_CCL.Designer.cs">
+      <DependentUpon>FrmRP_CCL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RP\FrmRP_LIMITPZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RP\FrmRP_LIMITPZ.Designer.cs">
+      <DependentUpon>FrmRP_LIMITPZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RP\FrmRP_NOTLIMIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RP\FrmRP_NOTLIMIT.Designer.cs">
+      <DependentUpon>FrmRP_NOTLIMIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RP\FrmRP_REPORT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RP\FrmRP_REPORT.Designer.cs">
+      <DependentUpon>FrmRP_REPORT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RP\FRMCS_RFJK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RP\FRMCS_RFJK.Designer.cs">
+      <DependentUpon>FRMCS_RFJK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RP\FrmRP_GPKCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RP\FrmRP_GPKCX.Designer.cs">
+      <DependentUpon>FrmRP_GPKCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RP\FrmRP_XMJH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RP\FrmRP_XMJH.Designer.cs">
+      <DependentUpon>FrmRP_XMJH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RP\FrmRP_KPJHZP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RP\FrmRP_KPJHZP.Designer.cs">
+      <DependentUpon>FrmRP_KPJHZP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RP\FrmRP_KPSJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RP\FrmRP_KPSJ.Designer.cs">
+      <DependentUpon>FrmRP_KPSJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RP\FrmRP_XMSJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RP\FrmRP_XMSJ.Designer.cs">
+      <DependentUpon>FrmRP_XMSJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RP\FrmRP_ZGJHZP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RP\FrmRP_ZGJHZP.Designer.cs">
+      <DependentUpon>FrmRP_ZGJHZP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RP\FrmRP_ZGJHZP_TEST.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RP\FrmRP_ZGJHZP_TEST.Designer.cs">
+      <DependentUpon>FrmRP_ZGJHZP_TEST.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RP\PWTS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RP\PWTS.Designer.cs">
+      <DependentUpon>PWTS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RP\XM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RP\XM.Designer.cs">
+      <DependentUpon>XM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RR\FrmRP_WGD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RR\FrmRP_WGD.Designer.cs">
+      <DependentUpon>FrmRP_WGD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RR\FrmRR_KPBCJL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RR\FrmRR_KPBCJL.Designer.cs">
+      <DependentUpon>FrmRR_KPBCJL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RR\FrmRR_LGKP.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RR\FrmRR_LGKP.Designer.cs">
+      <DependentUpon>FrmRR_LGKP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RR\FrmRR_WGDBCJL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RR\FrmRR_WGDBCJL.Designer.cs">
+      <DependentUpon>FrmRR_WGDBCJL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RR\FrmRR_XMSL.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RR\FrmRR_XMSL.Designer.cs">
+      <DependentUpon>FrmRR_XMSL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RR\FrmRR_ZPJL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RR\FrmRR_ZPJL.Designer.cs">
+      <DependentUpon>FrmRR_ZPJL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TM\FrmFR_QTCK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TM\FrmFR_QTCK.Designer.cs">
+      <DependentUpon>FrmFR_QTCK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TM\FrmFR_QTCKDTB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TM\FrmFR_QTCKDTB.Designer.cs">
+      <DependentUpon>FrmFR_QTCKDTB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TM\FrmFR_TMKCPD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TM\FrmFR_TMKCPD.Designer.cs">
+      <DependentUpon>FrmFR_TMKCPD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TM\FrmFR_XCFYDTB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TM\FrmFR_XCFYDTB.Designer.cs">
+      <DependentUpon>FrmFR_XCFYDTB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TM\FrmFR_XCZLTB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TM\FrmFR_XCZLTB.Designer.cs">
+      <DependentUpon>FrmFR_XCZLTB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TM\FrmFR_YWDTB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TM\FrmFR_YWDTB.Designer.cs">
+      <DependentUpon>FrmFR_YWDTB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TM\FrmFR_ZKD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TM\FrmFR_ZKD.Designer.cs">
+      <DependentUpon>FrmFR_ZKD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TM\FrmFR_ZKDTB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TM\FrmFR_ZKDTB.Designer.cs">
+      <DependentUpon>FrmFR_ZKDTB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TM\FrmPB_GPFYD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TM\FrmPB_GPFYD.Designer.cs">
+      <DependentUpon>FrmPB_GPFYD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TM\FrmTM_QTCKD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TM\FrmTM_QTCKD.Designer.cs">
+      <DependentUpon>FrmTM_QTCKD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TM\FrmTM_ZKD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TM\FrmTM_ZKD.Designer.cs">
+      <DependentUpon>FrmTM_ZKD.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RA\FrmRA_DB.resx">
+      <DependentUpon>FrmRA_DB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RA\FrmRA_FK_OLD.resx">
+      <DependentUpon>FrmRA_FK_OLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RA\FrmRA_FK.resx">
+      <DependentUpon>FrmRA_FK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RA\FrmRA_DD.resx">
+      <DependentUpon>FrmRA_DD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RA\FrmRA_GPGZCX.resx">
+      <DependentUpon>FrmRA_GPGZCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RA\FrmRA_KPFK.resx">
+      <DependentUpon>FrmRA_KPFK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RA\FrmRA_RK_OLD.resx">
+      <DependentUpon>FrmRA_RK_OLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RA\FrmRA_RK.resx">
+      <DependentUpon>FrmRA_RK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RA\FrmRA_TC.resx">
+      <DependentUpon>FrmRA_TC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RA\FrmRA_ZC.resx">
+      <DependentUpon>FrmRA_ZC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RC\FrmRC_TBWGD4.resx">
+      <DependentUpon>FrmRC_TBWGD4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RC\FrmRC_TBWGD5.resx">
+      <DependentUpon>FrmRC_TBWGD5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RC\FrmRC_TBWGD_INNER.resx">
+      <DependentUpon>FrmRC_TBWGD_INNER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RC\FrmRC_TSXX_CANCLE.resx">
+      <DependentUpon>FrmRC_TSXX_CANCLE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RC\FrmRC_TSXX_ADD.resx">
+      <DependentUpon>FrmRC_TSXX_ADD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RC\FrmRC_GZGG.resx">
+      <DependentUpon>FrmRC_GZGG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RC\FrmRC_JRLGL.resx">
+      <DependentUpon>FrmRC_JRLGL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RC\FrmRC_KPJRLGL.resx">
+      <DependentUpon>FrmRC_KPJRLGL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RC\FrmRC_TBKPSJ.resx">
+      <DependentUpon>FrmRC_TBKPSJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RC\FrmRC_TBKPSJ2.resx">
+      <DependentUpon>FrmRC_TBKPSJ2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RC\FrmRC_TBKPSJ3.resx">
+      <DependentUpon>FrmRC_TBKPSJ3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RC\FrmRC_TBKPSJ4.resx">
+      <DependentUpon>FrmRC_TBKPSJ4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RC\FrmRC_TBWGD.resx">
+      <DependentUpon>FrmRC_TBWGD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RC\FrmRC_TBWGD2.resx">
+      <DependentUpon>FrmRC_TBWGD2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RC\FrmRC_TBWGD3.resx">
+      <DependentUpon>FrmRC_TBWGD3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RC\FrmRC_WGD_CX.resx">
+      <DependentUpon>FrmRC_WGD_CX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RC\FrmRC_ZGWGJL.resx">
+      <DependentUpon>FrmRC_ZGWGJL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RC\FrmRF_TBRFWGT.resx">
+      <DependentUpon>FrmRF_TBRFWGT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RC\FrmRF_TBTKXX.resx">
+      <DependentUpon>FrmRF_TBTKXX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RC\FrmRF_ZGWGD.resx">
+      <DependentUpon>FrmRF_ZGWGD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RC\FrmRF_ZGWGDCH.resx">
+      <DependentUpon>FrmRF_ZGWGDCH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP\FrmRP_AutoSyncUser.resx">
+      <DependentUpon>FrmRP_AutoSyncUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP\FrmRP_CCL.resx">
+      <DependentUpon>FrmRP_CCL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP\FrmRP_LIMITPZ.resx">
+      <DependentUpon>FrmRP_LIMITPZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP\FrmRP_NOTLIMIT.resx">
+      <DependentUpon>FrmRP_NOTLIMIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP\FrmRP_REPORT.resx">
+      <DependentUpon>FrmRP_REPORT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP\FRMCS_RFJK.resx">
+      <DependentUpon>FRMCS_RFJK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP\FrmRP_GPKCX.resx">
+      <DependentUpon>FrmRP_GPKCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP\FrmRP_XMJH.resx">
+      <DependentUpon>FrmRP_XMJH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP\FrmRP_KPJHZP.resx">
+      <DependentUpon>FrmRP_KPJHZP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP\FrmRP_KPSJ.resx">
+      <DependentUpon>FrmRP_KPSJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP\FrmRP_XMSJ.resx">
+      <DependentUpon>FrmRP_XMSJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP\FrmRP_ZGJHZP.resx">
+      <DependentUpon>FrmRP_ZGJHZP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP\FrmRP_ZGJHZP_TEST.resx">
+      <DependentUpon>FrmRP_ZGJHZP_TEST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP\PWTS.resx">
+      <DependentUpon>PWTS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP\XM.resx">
+      <DependentUpon>XM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RR\FrmRP_WGD.resx">
+      <DependentUpon>FrmRP_WGD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RR\FrmRR_KPBCJL.resx">
+      <DependentUpon>FrmRR_KPBCJL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RR\FrmRR_LGKP.resx">
+      <DependentUpon>FrmRR_LGKP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RR\FrmRR_WGDBCJL.resx">
+      <DependentUpon>FrmRR_WGDBCJL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RR\FrmRR_XMSL.resx">
+      <DependentUpon>FrmRR_XMSL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RR\FrmRR_ZPJL.resx">
+      <DependentUpon>FrmRR_ZPJL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TM\FrmFR_QTCK.resx">
+      <DependentUpon>FrmFR_QTCK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TM\FrmFR_QTCKDTB.resx">
+      <DependentUpon>FrmFR_QTCKDTB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TM\FrmFR_TMKCPD.resx">
+      <DependentUpon>FrmFR_TMKCPD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TM\FrmFR_XCFYDTB.resx">
+      <DependentUpon>FrmFR_XCFYDTB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TM\FrmFR_XCZLTB.resx">
+      <DependentUpon>FrmFR_XCZLTB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TM\FrmFR_YWDTB.resx">
+      <DependentUpon>FrmFR_YWDTB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TM\FrmFR_ZKD.resx">
+      <DependentUpon>FrmFR_ZKD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TM\FrmFR_ZKDTB.resx">
+      <DependentUpon>FrmFR_ZKDTB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TM\FrmPB_GPFYD.resx">
+      <DependentUpon>FrmPB_GPFYD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TM\FrmTM_QTCKD.resx">
+      <DependentUpon>FrmTM_QTCKD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TM\FrmTM_ZKD.resx">
+      <DependentUpon>FrmTM_ZKD.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\MODEL.Mod_TRC_ROLL_MAIN.datasource" />
+    <None Include="Properties\DataSources\MODEL.Mod_TRC_ROLL_PRODCUT.datasource" />
+    <None Include="Properties\DataSources\MODEL.Mod_TRP_PLAN_ROLL.datasource" />
+    <None Include="Properties\DataSources\MODEL.Mod_TSC_SLAB_MAIN.datasource" />
+    <None Include="Properties\DataSources\MODEL.Mod_TSP_PLAN_SMS.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{15b3290b-9a04-4a98-bdba-f378b2504706}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{e3d8759a-c5eb-402d-9f10-f5c6029a8d1a}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IDAL\IDAL.csproj">
+      <Project>{bb089d79-bcf5-44dd-87c4-b1bd653bc5d9}</Project>
+      <Name>IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MODEL\MODEL.csproj">
+      <Project>{5ad207cc-7fa4-4b7c-bbe5-5ef48beaf9ea}</Project>
+      <Name>MODEL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BB089D79-BCF5-44DD-87C4-B1BD653BC5D9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IDAL</RootNamespace>
+    <AssemblyName>IDAL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Oracle.ManagedDataAccess">
+      <HintPath>..\XGPCI\NeedDll\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="RV.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RV.UI\bin\Debug\RV.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DbHelperOra.cs" />
+    <Compile Include="DbHelper_SQL.cs" />
+    <Compile Include="I\Dal_Interface_FR.cs" />
+    <Compile Include="I\Dal_ReZJB_FYD.cs" />
+    <Compile Include="I\Dal_ReZJB_GPD.cs" />
+    <Compile Include="I\Dal_ReZJB_PDD.cs" />
+    <Compile Include="I\Dal_ReZJB_PDD_Item.cs" />
+    <Compile Include="I\Dal_ReZJB_WGD.cs" />
+    <Compile Include="I\Dal_ReZJB_WGD_Item.cs" />
+    <Compile Include="I\Dal_ReZJB_ZKD.cs" />
+    <Compile Include="I\Dal_SeZJB_FYD_finished.cs" />
+    <Compile Include="I\Dal_SeZJB_PDD_FINISHED.cs" />
+    <Compile Include="I\Dal_SeZJB_Shift_Record.cs" />
+    <Compile Include="I\Dal_SeZJB_WGD_Finished.cs" />
+    <Compile Include="I\Dal_SeZJB_ZKD_finished.cs" />
+    <Compile Include="I\Dal_WMS_Bms_Inv_Info.cs" />
+    <Compile Include="I\Dal_WMS_Bms_Inv_OutInfo.cs" />
+    <Compile Include="I\Dal_WMS_Bms_Rec_WGD.cs" />
+    <Compile Include="I\Dal_WMS_Bms_Tra_ZKD.cs" />
+    <Compile Include="I\Dal_WMS_Bms_Tra_ZKD_Detail.cs" />
+    <Compile Include="I\Dal_WMS_Bms_Tra_ZKD_Item.cs" />
+    <Compile Include="I\Dal_WMS_Bms_Tra_ZKD_Total.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TransactionHelper.cs" />
+    <Compile Include="TransantionHelper_SQL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{15b3290b-9a04-4a98-bdba-f378b2504706}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{e3d8759a-c5eb-402d-9f10-f5c6029a8d1a}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{8ffe13a0-f991-422e-8867-fe0068798f79}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MODEL\MODEL.csproj">
+      <Project>{5ad207cc-7fa4-4b7c-bbe5-5ef48beaf9ea}</Project>
+      <Name>MODEL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet_XC_TD" targetNamespace="http://tempuri.org/DataSet_XC_TD.xsd" xmlns:mstns="http://tempuri.org/DataSet_XC_TD.xsd" xmlns="http://tempuri.org/DataSet_XC_TD.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet_XC_TD" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet_XC_TD" msprop:Generator_UserDSName="DataSet_XC_TD">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable_Title" msprop:Generator_TableClassName="DataTable_TitleDataTable" msprop:Generator_TableVarName="tableDataTable_Title" msprop:Generator_TablePropName="DataTable_Title" msprop:Generator_RowDeletingName="DataTable_TitleRowDeleting" msprop:Generator_RowChangingName="DataTable_TitleRowChanging" msprop:Generator_RowEvHandlerName="DataTable_TitleRowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable_TitleRowDeleted" msprop:Generator_UserTableName="DataTable_Title" msprop:Generator_RowChangedName="DataTable_TitleRowChanged" msprop:Generator_RowEvArgName="DataTable_TitleRowChangeEvent" msprop:Generator_RowClassName="DataTable_TitleRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="C_MAT_DESC" msprop:Generator_ColumnVarNameInTable="columnC_MAT_DESC" msprop:Generator_ColumnPropNameInRow="C_MAT_DESC" msprop:Generator_ColumnPropNameInTable="C_MAT_DESCColumn" msprop:Generator_UserColumnName="C_MAT_DESC" type="xs:string" minOccurs="0" />
+              <xs:element name="C_STD_CODE" msprop:Generator_ColumnVarNameInTable="columnC_STD_CODE" msprop:Generator_ColumnPropNameInRow="C_STD_CODE" msprop:Generator_ColumnPropNameInTable="C_STD_CODEColumn" msprop:Generator_UserColumnName="C_STD_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="C_CON_NO" msprop:Generator_ColumnVarNameInTable="columnC_CON_NO" msprop:Generator_ColumnPropNameInRow="C_CON_NO" msprop:Generator_ColumnPropNameInTable="C_CON_NOColumn" msprop:Generator_UserColumnName="C_CON_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="C_ZSH" msprop:Generator_ColumnVarNameInTable="columnC_ZSH" msprop:Generator_ColumnPropNameInRow="C_ZSH" msprop:Generator_ColumnPropNameInTable="C_ZSHColumn" msprop:Generator_UserColumnName="C_ZSH" type="xs:string" minOccurs="0" />
+              <xs:element name="C_DHDW" msprop:Generator_ColumnVarNameInTable="columnC_DHDW" msprop:Generator_ColumnPropNameInRow="C_DHDW" msprop:Generator_ColumnPropNameInTable="C_DHDWColumn" msprop:Generator_UserColumnName="C_DHDW" type="xs:string" minOccurs="0" />
+              <xs:element name="C_SHDW" msprop:Generator_ColumnVarNameInTable="columnC_SHDW" msprop:Generator_ColumnPropNameInRow="C_SHDW" msprop:Generator_ColumnPropNameInTable="C_SHDWColumn" msprop:Generator_UserColumnName="C_SHDW" type="xs:string" minOccurs="0" />
+              <xs:element name="C_CH" msprop:Generator_ColumnVarNameInTable="columnC_CH" msprop:Generator_ColumnPropNameInRow="C_CH" msprop:Generator_ColumnPropNameInTable="C_CHColumn" msprop:Generator_UserColumnName="C_CH" type="xs:string" minOccurs="0" />
+              <xs:element name="C_WGT" msprop:Generator_ColumnVarNameInTable="columnC_WGT" msprop:Generator_ColumnPropNameInRow="C_WGT" msprop:Generator_ColumnPropNameInTable="C_WGTColumn" msprop:Generator_UserColumnName="C_WGT" type="xs:string" minOccurs="0" />
+              <xs:element name="C_NUM" msprop:Generator_ColumnVarNameInTable="columnC_NUM" msprop:Generator_ColumnPropNameInRow="C_NUM" msprop:Generator_ColumnPropNameInTable="C_NUMColumn" msprop:Generator_UserColumnName="C_NUM" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable_Details" msprop:Generator_TableClassName="DataTable_DetailsDataTable" msprop:Generator_TableVarName="tableDataTable_Details" msprop:Generator_TablePropName="DataTable_Details" msprop:Generator_RowDeletingName="DataTable_DetailsRowDeleting" msprop:Generator_RowChangingName="DataTable_DetailsRowChanging" msprop:Generator_RowEvHandlerName="DataTable_DetailsRowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable_DetailsRowDeleted" msprop:Generator_UserTableName="DataTable_Details" msprop:Generator_RowChangedName="DataTable_DetailsRowChanged" msprop:Generator_RowEvArgName="DataTable_DetailsRowChangeEvent" msprop:Generator_RowClassName="DataTable_DetailsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="C_BATCH_NO_NEW" msprop:Generator_ColumnVarNameInTable="columnC_BATCH_NO_NEW" msprop:Generator_ColumnPropNameInRow="C_BATCH_NO_NEW" msprop:Generator_ColumnPropNameInTable="C_BATCH_NO_NEWColumn" msprop:Generator_UserColumnName="C_BATCH_NO_NEW" type="xs:string" minOccurs="0" />
+              <xs:element name="C_STL_GRD" msprop:Generator_ColumnVarNameInTable="columnC_STL_GRD" msprop:Generator_ColumnPropNameInRow="C_STL_GRD" msprop:Generator_ColumnPropNameInTable="C_STL_GRDColumn" msprop:Generator_UserColumnName="C_STL_GRD" type="xs:string" minOccurs="0" />
+              <xs:element name="C_SPEC_NEW" msprop:Generator_ColumnVarNameInTable="columnC_SPEC_NEW" msprop:Generator_ColumnPropNameInRow="C_SPEC_NEW" msprop:Generator_ColumnPropNameInTable="C_SPEC_NEWColumn" msprop:Generator_UserColumnName="C_SPEC_NEW" type="xs:string" minOccurs="0" />
+              <xs:element name="QUA" msprop:Generator_ColumnVarNameInTable="columnQUA" msprop:Generator_ColumnPropNameInRow="QUA" msprop:Generator_ColumnPropNameInTable="QUAColumn" msprop:Generator_UserColumnName="QUA" type="xs:string" minOccurs="0" />
+              <xs:element name="WGT" msprop:Generator_ColumnVarNameInTable="columnWGT" msprop:Generator_ColumnPropNameInRow="WGT" msprop:Generator_ColumnPropNameInTable="WGTColumn" msprop:Generator_UserColumnName="WGT" type="xs:string" minOccurs="0" />
+              <xs:element name="C_JUDGE_LEV_ZH" msprop:Generator_ColumnVarNameInTable="columnC_JUDGE_LEV_ZH" msprop:Generator_ColumnPropNameInRow="C_JUDGE_LEV_ZH" msprop:Generator_ColumnPropNameInTable="C_JUDGE_LEV_ZHColumn" msprop:Generator_UserColumnName="C_JUDGE_LEV_ZH" type="xs:string" minOccurs="0" />
+              <xs:element name="CF1" msprop:Generator_ColumnVarNameInTable="columnCF1" msprop:Generator_ColumnPropNameInRow="CF1" msprop:Generator_ColumnPropNameInTable="CF1Column" msprop:Generator_UserColumnName="CF1" type="xs:string" minOccurs="0" />
+              <xs:element name="CF2" msprop:Generator_ColumnVarNameInTable="columnCF2" msprop:Generator_ColumnPropNameInRow="CF2" msprop:Generator_ColumnPropNameInTable="CF2Column" msprop:Generator_UserColumnName="CF2" type="xs:string" minOccurs="0" />
+              <xs:element name="CF3" msprop:Generator_ColumnVarNameInTable="columnCF3" msprop:Generator_ColumnPropNameInRow="CF3" msprop:Generator_ColumnPropNameInTable="CF3Column" msprop:Generator_UserColumnName="CF3" type="xs:string" minOccurs="0" />
+              <xs:element name="CF4" msprop:Generator_ColumnVarNameInTable="columnCF4" msprop:Generator_ColumnPropNameInRow="CF4" msprop:Generator_ColumnPropNameInTable="CF4Column" msprop:Generator_UserColumnName="CF4" type="xs:string" minOccurs="0" />
+              <xs:element name="CF5" msprop:Generator_ColumnVarNameInTable="columnCF5" msprop:Generator_ColumnPropNameInRow="CF5" msprop:Generator_ColumnPropNameInTable="CF5Column" msprop:Generator_UserColumnName="CF5" type="xs:string" minOccurs="0" />
+              <xs:element name="CF6" msprop:Generator_ColumnVarNameInTable="columnCF6" msprop:Generator_ColumnPropNameInRow="CF6" msprop:Generator_ColumnPropNameInTable="CF6Column" msprop:Generator_UserColumnName="CF6" type="xs:string" minOccurs="0" />
+              <xs:element name="CF7" msprop:Generator_ColumnVarNameInTable="columnCF7" msprop:Generator_ColumnPropNameInRow="CF7" msprop:Generator_ColumnPropNameInTable="CF7Column" msprop:Generator_UserColumnName="CF7" type="xs:string" minOccurs="0" />
+              <xs:element name="CF8" msprop:Generator_ColumnVarNameInTable="columnCF8" msprop:Generator_ColumnPropNameInRow="CF8" msprop:Generator_ColumnPropNameInTable="CF8Column" msprop:Generator_UserColumnName="CF8" type="xs:string" minOccurs="0" />
+              <xs:element name="CF9" msprop:Generator_ColumnVarNameInTable="columnCF9" msprop:Generator_ColumnPropNameInRow="CF9" msprop:Generator_ColumnPropNameInTable="CF9Column" msprop:Generator_UserColumnName="CF9" type="xs:string" minOccurs="0" />
+              <xs:element name="CF10" msprop:Generator_ColumnVarNameInTable="columnCF10" msprop:Generator_ColumnPropNameInRow="CF10" msprop:Generator_ColumnPropNameInTable="CF10Column" msprop:Generator_UserColumnName="CF10" type="xs:string" minOccurs="0" />
+              <xs:element name="CF11" msprop:Generator_ColumnVarNameInTable="columnCF11" msprop:Generator_ColumnPropNameInRow="CF11" msprop:Generator_ColumnPropNameInTable="CF11Column" msprop:Generator_UserColumnName="CF11" type="xs:string" minOccurs="0" />
+              <xs:element name="CF12" msprop:Generator_ColumnVarNameInTable="columnCF12" msprop:Generator_ColumnPropNameInRow="CF12" msprop:Generator_ColumnPropNameInTable="CF12Column" msprop:Generator_UserColumnName="CF12" type="xs:string" minOccurs="0" />
+              <xs:element name="硬度1" msprop:Generator_ColumnVarNameInTable="column硬度1" msprop:Generator_ColumnPropNameInRow="硬度1" msprop:Generator_ColumnPropNameInTable="硬度1Column" msprop:Generator_UserColumnName="硬度1" type="xs:string" minOccurs="0" />
+              <xs:element name="硬度2" msprop:Generator_ColumnVarNameInTable="column硬度2" msprop:Generator_ColumnPropNameInRow="硬度2" msprop:Generator_ColumnPropNameInTable="硬度2Column" msprop:Generator_UserColumnName="硬度2" type="xs:string" minOccurs="0" />
+              <xs:element name="硬度3" msprop:Generator_ColumnVarNameInTable="column硬度3" msprop:Generator_ColumnPropNameInRow="硬度3" msprop:Generator_ColumnPropNameInTable="硬度3Column" msprop:Generator_UserColumnName="硬度3" type="xs:string" minOccurs="0" />
+              <xs:element name="冷弯" msprop:Generator_ColumnVarNameInTable="column冷弯" msprop:Generator_ColumnPropNameInRow="冷弯" msprop:Generator_ColumnPropNameInTable="冷弯Column" msprop:Generator_UserColumnName="冷弯" type="xs:string" minOccurs="0" />
+              <xs:element name="冷顶锻" msprop:Generator_ColumnVarNameInTable="column冷顶锻" msprop:Generator_ColumnPropNameInRow="冷顶锻" msprop:Generator_ColumnPropNameInTable="冷顶锻Column" msprop:Generator_UserColumnName="冷顶锻" type="xs:string" minOccurs="0" />
+              <xs:element name="级别" msprop:Generator_ColumnVarNameInTable="column级别" msprop:Generator_ColumnPropNameInRow="级别" msprop:Generator_ColumnPropNameInTable="级别Column" msprop:Generator_UserColumnName="级别" type="xs:string" minOccurs="0" />
+              <xs:element name="最大纵向尺寸" msprop:Generator_ColumnVarNameInTable="column最大纵向尺寸" msprop:Generator_ColumnPropNameInRow="最大纵向尺寸" msprop:Generator_ColumnPropNameInTable="最大纵向尺寸Column" msprop:Generator_UserColumnName="最大纵向尺寸" type="xs:string" minOccurs="0" />
+              <xs:element name="最大横向尺寸" msprop:Generator_ColumnVarNameInTable="column最大横向尺寸" msprop:Generator_ColumnPropNameInRow="最大横向尺寸" msprop:Generator_ColumnPropNameInTable="最大横向尺寸Column" msprop:Generator_UserColumnName="最大横向尺寸" type="xs:string" minOccurs="0" />
+              <xs:element name="索氏体率" msprop:Generator_ColumnVarNameInTable="column索氏体率" msprop:Generator_ColumnPropNameInRow="索氏体率" msprop:Generator_ColumnPropNameInTable="索氏体率Column" msprop:Generator_UserColumnName="索氏体率" type="xs:string" minOccurs="0" />
+              <xs:element name="网碳" msprop:Generator_ColumnVarNameInTable="column网碳" msprop:Generator_ColumnPropNameInRow="网碳" msprop:Generator_ColumnPropNameInTable="网碳Column" msprop:Generator_UserColumnName="网碳" type="xs:string" minOccurs="0" />
+              <xs:element name="金相组织" msprop:Generator_ColumnVarNameInTable="column金相组织" msprop:Generator_ColumnPropNameInRow="金相组织" msprop:Generator_ColumnPropNameInTable="金相组织Column" msprop:Generator_UserColumnName="金相组织" type="xs:string" minOccurs="0" />
+              <xs:element name="总脱碳层" msprop:Generator_ColumnVarNameInTable="column总脱碳层" msprop:Generator_ColumnPropNameInRow="总脱碳层" msprop:Generator_ColumnPropNameInTable="总脱碳层Column" msprop:Generator_UserColumnName="总脱碳层" type="xs:string" minOccurs="0" />
+              <xs:element name="全脱碳层" msprop:Generator_ColumnVarNameInTable="column全脱碳层" msprop:Generator_ColumnPropNameInRow="全脱碳层" msprop:Generator_ColumnPropNameInTable="全脱碳层Column" msprop:Generator_UserColumnName="全脱碳层" type="xs:string" minOccurs="0" />
+              <xs:element name="晶粒度" msprop:Generator_ColumnVarNameInTable="column晶粒度" msprop:Generator_ColumnPropNameInRow="晶粒度" msprop:Generator_ColumnPropNameInTable="晶粒度Column" msprop:Generator_UserColumnName="晶粒度" type="xs:string" minOccurs="0" />
+              <xs:element name="屈服" msprop:Generator_ColumnVarNameInTable="column屈服" msprop:Generator_ColumnPropNameInRow="屈服" msprop:Generator_ColumnPropNameInTable="屈服Column" msprop:Generator_UserColumnName="屈服" type="xs:string" minOccurs="0" />
+              <xs:element name="抗拉" msprop:Generator_ColumnVarNameInTable="column抗拉" msprop:Generator_ColumnPropNameInRow="抗拉" msprop:Generator_ColumnPropNameInTable="抗拉Column" msprop:Generator_UserColumnName="抗拉" type="xs:string" minOccurs="0" />
+              <xs:element name="面缩" msprop:Generator_ColumnVarNameInTable="column面缩" msprop:Generator_ColumnPropNameInRow="面缩" msprop:Generator_ColumnPropNameInTable="面缩Column" msprop:Generator_UserColumnName="面缩" type="xs:string" minOccurs="0" />
+              <xs:element name="伸长" msprop:Generator_ColumnVarNameInTable="column伸长" msprop:Generator_ColumnPropNameInRow="伸长" msprop:Generator_ColumnPropNameInTable="伸长Column" msprop:Generator_UserColumnName="伸长" type="xs:string" minOccurs="0" />
+              <xs:element name="冲击试验" msprop:Generator_ColumnVarNameInTable="column冲击试验" msprop:Generator_ColumnPropNameInRow="冲击试验" msprop:Generator_ColumnPropNameInTable="冲击试验Column" msprop:Generator_UserColumnName="冲击试验" type="xs:string" minOccurs="0" />
+              <xs:element name="导电率" msprop:Generator_ColumnVarNameInTable="column导电率" msprop:Generator_ColumnPropNameInRow="导电率" msprop:Generator_ColumnPropNameInTable="导电率Column" msprop:Generator_UserColumnName="导电率" type="xs:string" minOccurs="0" />
+              <xs:element name="一般疏松" msprop:Generator_ColumnVarNameInTable="column一般疏松" msprop:Generator_ColumnPropNameInRow="一般疏松" msprop:Generator_ColumnPropNameInTable="一般疏松Column" msprop:Generator_UserColumnName="一般疏松" type="xs:string" minOccurs="0" />
+              <xs:element name="中心疏松" msprop:Generator_ColumnVarNameInTable="column中心疏松" msprop:Generator_ColumnPropNameInRow="中心疏松" msprop:Generator_ColumnPropNameInTable="中心疏松Column" msprop:Generator_UserColumnName="中心疏松" type="xs:string" minOccurs="0" />
+              <xs:element name="方形偏析" msprop:Generator_ColumnVarNameInTable="column方形偏析" msprop:Generator_ColumnPropNameInRow="方形偏析" msprop:Generator_ColumnPropNameInTable="方形偏析Column" msprop:Generator_UserColumnName="方形偏析" type="xs:string" minOccurs="0" />
+              <xs:element name="中心偏析" msprop:Generator_ColumnVarNameInTable="column中心偏析" msprop:Generator_ColumnPropNameInRow="中心偏析" msprop:Generator_ColumnPropNameInTable="中心偏析Column" msprop:Generator_UserColumnName="中心偏析" type="xs:string" minOccurs="0" />
+              <xs:element name="热顶锻" msprop:Generator_ColumnVarNameInTable="column热顶锻" msprop:Generator_ColumnPropNameInRow="热顶锻" msprop:Generator_ColumnPropNameInTable="热顶锻Column" msprop:Generator_UserColumnName="热顶锻" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

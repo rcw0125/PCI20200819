@@ -1,0 +1,2287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{33631F3C-7891-4580-9946-B5FD38A66A34}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XGCAP.UI.P</RootNamespace>
+    <AssemblyName>XGCAP.UI.P</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells, Version=5.3.1.0, Culture=neutral, PublicKeyToken=9ec0ff091d04b091, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\XGPCI\NeedDll\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v16.2.UI, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Spreadsheet.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v16.2.UI, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraSpreadsheet.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="RV.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\XGPCI\NeedDll\RV.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PB\FrmOutTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmOutTable.Designer.cs">
+      <DependentUpon>FrmOutTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_BCBZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_BCBZ.Designer.cs">
+      <DependentUpon>FrmPB_BCBZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_BCBZGZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_BCBZGZ.Designer.cs">
+      <DependentUpon>FrmPB_BCBZGZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_BC_OLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_BC_OLD.Designer.cs">
+      <DependentUpon>FrmPB_BC_OLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_BZ_OLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_BZ_OLD.Designer.cs">
+      <DependentUpon>FrmPB_BZ_OLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_CNLR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_CNLR.Designer.cs">
+      <DependentUpon>FrmPB_CNLR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_CNLR_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_CNLR_Edit.Designer.cs">
+      <DependentUpon>FrmPB_CNLR_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_GLCN_OLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_GLCN_OLD.Designer.cs">
+      <DependentUpon>FrmPB_GLCN_OLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_GPJSCL1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_GPJSCL1.Designer.cs">
+      <DependentUpon>FrmPB_GPJSCL1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_GPJSCN_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_GPJSCN_EDIT.Designer.cs">
+      <DependentUpon>FrmPB_GPJSCN_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_GPKCK_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_GPKCK_EDIT.Designer.cs">
+      <DependentUpon>FrmPB_GPKCK_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_GPKKW_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_GPKKW_EDIT.Designer.cs">
+      <DependentUpon>FrmPB_GPKKW_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_GPKQY_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_GPKQY_EDIT.Designer.cs">
+      <DependentUpon>FrmPB_GPKQY_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_GWCKDY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_GWCKDY.Designer.cs">
+      <DependentUpon>FrmPB_GWCKDY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_GWLSCN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_GWLSCN.Designer.cs">
+      <DependentUpon>FrmPB_GWLSCN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_GWLSCN_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_GWLSCN_EDIT.Designer.cs">
+      <DependentUpon>FrmPB_GWLSCN_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_GWPB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_GWPB.Designer.cs">
+      <DependentUpon>FrmPB_GWPB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_GWYDSJ_OLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_GWYDSJ_OLD.Designer.cs">
+      <DependentUpon>FrmPB_GWYDSJ_OLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_GWZYSJ1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_GWZYSJ1.Designer.cs">
+      <DependentUpon>FrmPB_GWZYSJ1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_GW_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_GW_EDIT.Designer.cs">
+      <DependentUpon>FrmPB_GW_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_GX_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_GX_EDIT.Designer.cs">
+      <DependentUpon>FrmPB_GX_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_GYLX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_GYLX.Designer.cs">
+      <DependentUpon>FrmPB_GYLX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_GZZJCLS_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_GZZJCLS_EDIT.Designer.cs">
+      <DependentUpon>FrmPB_GZZJCLS_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_HLKGL_OLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_HLKGL_OLD.Designer.cs">
+      <DependentUpon>FrmPB_HLKGL_OLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_KHJWH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_KHJWH.Designer.cs">
+      <DependentUpon>FrmPB_KHJWH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_KHJWH1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_KHJWH1.Designer.cs">
+      <DependentUpon>FrmPB_KHJWH1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_KPJRLTJ_OLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_KPJRLTJ_OLD.Designer.cs">
+      <DependentUpon>FrmPB_KPJRLTJ_OLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_LGHJCSJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_LGHJCSJ.Designer.cs">
+      <DependentUpon>FrmPB_LGHJCSJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_LGHJCSJ_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_LGHJCSJ_EDIT.Designer.cs">
+      <DependentUpon>FrmPB_LGHJCSJ_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_LGTLSJ_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_LGTLSJ_EDIT.Designer.cs">
+      <DependentUpon>FrmPB_LGTLSJ_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_LGYLSJ1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_LGYLSJ1.Designer.cs">
+      <DependentUpon>FrmPB_LGYLSJ1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_LZHJC_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_LZHJC_EDIT.Designer.cs">
+      <DependentUpon>FrmPB_LZHJC_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_MLZL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_MLZL.Designer.cs">
+      <DependentUpon>FrmPB_MLZL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_MLZL_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_MLZL_EDIT.Designer.cs">
+      <DependentUpon>FrmPB_MLZL_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_NYKZCB_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_NYKZCB_EDIT.Designer.cs">
+      <DependentUpon>FrmPB_NYKZCB_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_SCLX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_SCLX.Designer.cs">
+      <DependentUpon>FrmPB_SCLX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_SELECT_GZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_SELECT_GZ.Designer.cs">
+      <DependentUpon>FrmPB_SELECT_GZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_TSBZXX_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_TSBZXX_EDIT.Designer.cs">
+      <DependentUpon>FrmPB_TSBZXX_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_TSCF_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_TSCF_EDIT.Designer.cs">
+      <DependentUpon>FrmPB_TSCF_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_TSTJ_OLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_TSTJ_OLD.Designer.cs">
+      <DependentUpon>FrmPB_TSTJ_OLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_WL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_WL.Designer.cs">
+      <DependentUpon>FrmPB_WL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_XCKCK_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_XCKCK_EDIT.Designer.cs">
+      <DependentUpon>FrmPB_XCKCK_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_XCKKW_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_XCKKW_EDIT.Designer.cs">
+      <DependentUpon>FrmPB_XCKKW_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_XCKQY_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_XCKQY_EDIT.Designer.cs">
+      <DependentUpon>FrmPB_XCKQY_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_XCXMTJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_XCXMTJ.Designer.cs">
+      <DependentUpon>FrmPB_XCXMTJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_ZGBSCGZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_ZGBSCGZ.Designer.cs">
+      <DependentUpon>FrmPB_ZGBSCGZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_ZGHGGSJ_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_ZGHGGSJ_EDIT.Designer.cs">
+      <DependentUpon>FrmPB_ZGHGGSJ_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_ZGJSCN1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_ZGJSCN1.Designer.cs">
+      <DependentUpon>FrmPB_ZGJSCN1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_ZGJSCN_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_ZGJSCN_EDIT.Designer.cs">
+      <DependentUpon>FrmPB_ZGJSCN_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_GZSCTJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_GZSCTJ.Designer.cs">
+      <DependentUpon>FrmPB_GZSCTJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_GZSCTJWH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_GZSCTJWH.Designer.cs">
+      <DependentUpon>FrmPB_GZSCTJWH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_GZZJCLS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_GZZJCLS.Designer.cs">
+      <DependentUpon>FrmPB_GZZJCLS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_GPKGL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_GPKGL.Designer.cs">
+      <DependentUpon>FrmPB_GPKGL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_GX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_GX.Designer.cs">
+      <DependentUpon>FrmPB_GX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_KDZGZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_KDZGZ.Designer.cs">
+      <DependentUpon>FrmPB_KDZGZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_NYCB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_NYCB.Designer.cs">
+      <DependentUpon>FrmPB_NYCB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_XCKGL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_XCKGL.Designer.cs">
+      <DependentUpon>FrmPB_XCKGL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_ZGKSCGZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_ZGKSCGZ.Designer.cs">
+      <DependentUpon>FrmPB_ZGKSCGZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_ZGPGWH_OLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_ZGPGWH_OLD.Designer.cs">
+      <DependentUpon>FrmPB_ZGPGWH_OLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_ZGSCGG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_ZGSCGG.Designer.cs">
+      <DependentUpon>FrmPB_ZGSCGG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_ZGSCGL_OLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_ZGSCGL_OLD.Designer.cs">
+      <DependentUpon>FrmPB_ZGSCGL_OLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_ZLTSFG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_ZLTSFG.Designer.cs">
+      <DependentUpon>FrmPB_ZLTSFG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_ZLTSFG_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_ZLTSFG_EDIT.Designer.cs">
+      <DependentUpon>FrmPB_ZLTSFG_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_ZXGSWH01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_ZXGSWH01.Designer.cs">
+      <DependentUpon>FrmPB_ZXGSWH01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_ZXHGGSJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_ZXHGGSJ.Designer.cs">
+      <DependentUpon>FrmPB_ZXHGGSJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_SELECT_ZXBZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_SELECT_ZXBZ.Designer.cs">
+      <DependentUpon>FrmPB_SELECT_ZXBZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PB\FrmPB_ZXJRLTJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PB\FrmPB_ZXJRLTJ.Designer.cs">
+      <DependentUpon>FrmPB_ZXJRLTJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\APS\Cls_APS_PC.cs" />
+    <Compile Include="PO\APS\Cls_Pro_Info.cs" />
+    <Compile Include="PO\APS\Cls_Tsp_GX_Plan.cs" />
+    <Compile Include="PO\APS\FrmPO_APSconfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\APS\FrmPO_APSconfig.Designer.cs">
+      <DependentUpon>FrmPO_APSconfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\APS\FrmPO_APS_Addjc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\APS\FrmPO_APS_Addjc.Designer.cs">
+      <DependentUpon>FrmPO_APS_Addjc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\APS\FrmPO_APS_Deletejc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\APS\FrmPO_APS_Deletejc.Designer.cs">
+      <DependentUpon>FrmPO_APS_Deletejc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\APS\FrmPO_APS_LGJCJHPX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\APS\FrmPO_APS_LGJCJHPX.Designer.cs">
+      <DependentUpon>FrmPO_APS_LGJCJHPX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\APS\FrmPO_APS_LGJCJHPX_QUERY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\APS\FrmPO_APS_LGJCJHPX_QUERY.Designer.cs">
+      <DependentUpon>FrmPO_APS_LGJCJHPX_QUERY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\APS\FrmPO_APS_LGPC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\APS\FrmPO_APS_LGPC.Designer.cs">
+      <DependentUpon>FrmPO_APS_LGPC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\APS\FrmPO_APS_LGPC_NEW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\APS\FrmPO_APS_LGPC_NEW.Designer.cs">
+      <DependentUpon>FrmPO_APS_LGPC_NEW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\APS\FrmPO_APS_LGPC_NEW_BXG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\APS\FrmPO_APS_LGPC_NEW_BXG.Designer.cs">
+      <DependentUpon>FrmPO_APS_LGPC_NEW_BXG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\APS\FrmPO_APS_OrderPJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\APS\FrmPO_APS_OrderPJ.Designer.cs">
+      <DependentUpon>FrmPO_APS_OrderPJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\APS\FrmPO_APS_Order_LGFX_NEW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\APS\FrmPO_APS_Order_LGFX_NEW.Designer.cs">
+      <DependentUpon>FrmPO_APS_Order_LGFX_NEW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\APS\FrmPO_APS_Order_ZGFX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\APS\FrmPO_APS_Order_ZGFX.Designer.cs">
+      <DependentUpon>FrmPO_APS_Order_ZGFX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\APS\FrmPO_APS_Select_WL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\APS\FrmPO_APS_Select_WL.Designer.cs">
+      <DependentUpon>FrmPO_APS_Select_WL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\APS\FrmPO_APS_ZGJSCN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\APS\FrmPO_APS_ZGJSCN.Designer.cs">
+      <DependentUpon>FrmPO_APS_ZGJSCN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\APS\FrmPO_APS_ZG_Plan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\APS\FrmPO_APS_ZG_Plan.Designer.cs">
+      <DependentUpon>FrmPO_APS_ZG_Plan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\APS\FrmPO_APS_ZG_PLAN_LOG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\APS\FrmPO_APS_ZG_PLAN_LOG.Designer.cs">
+      <DependentUpon>FrmPO_APS_ZG_PLAN_LOG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\APS\FrmPO_select_GZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\APS\FrmPO_select_GZ.Designer.cs">
+      <DependentUpon>FrmPO_select_GZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\APS\FrmPO_APS_Order_ZGFX_NEW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\APS\FrmPO_APS_Order_ZGFX_NEW.Designer.cs">
+      <DependentUpon>FrmPO_APS_Order_ZGFX_NEW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\APS\TPO_APSConfig.cs" />
+    <Compile Include="PO\Cls_Order_PC.cs" />
+    <Compile Include="PO\FrmDateBJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmDateBJ.Designer.cs">
+      <DependentUpon>FrmDateBJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmPO_SELECT_WL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmPO_SELECT_WL.Designer.cs">
+      <DependentUpon>FrmPO_SELECT_WL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmPO_Allot_CCM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmPO_Allot_CCM.Designer.cs">
+      <DependentUpon>FrmPO_Allot_CCM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmPO_Allot_Line.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmPO_Allot_Line.Designer.cs">
+      <DependentUpon>FrmPO_Allot_Line.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmPO_GCRL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmPO_GCRL.Designer.cs">
+      <DependentUpon>FrmPO_GCRL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmPO_GPCHLK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmPO_GPCHLK.Designer.cs">
+      <DependentUpon>FrmPO_GPCHLK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmPO_GPDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmPO_GPDB.Designer.cs">
+      <DependentUpon>FrmPO_GPDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmPO_GPKCTB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmPO_GPKCTB.Designer.cs">
+      <DependentUpon>FrmPO_GPKCTB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmPO_GPRHLK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmPO_GPRHLK.Designer.cs">
+      <DependentUpon>FrmPO_GPRHLK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmPO_GPRK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmPO_GPRK.Designer.cs">
+      <DependentUpon>FrmPO_GPRK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmPO_GPSJ_DEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmPO_GPSJ_DEL.Designer.cs">
+      <DependentUpon>FrmPO_GPSJ_DEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmPO_Improt_Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmPO_Improt_Order.Designer.cs">
+      <DependentUpon>FrmPO_Improt_Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmPO_KCDR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmPO_KCDR.Designer.cs">
+      <DependentUpon>FrmPO_KCDR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmPO_KPJH_NEW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmPO_KPJH_NEW.Designer.cs">
+      <DependentUpon>FrmPO_KPJH_NEW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmPO_KPJH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmPO_KPJH.Designer.cs">
+      <DependentUpon>FrmPO_KPJH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmPO_LogGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmPO_LogGroup.Designer.cs">
+      <DependentUpon>FrmPO_LogGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmPO_OrderFX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmPO_OrderFX.Designer.cs">
+      <DependentUpon>FrmPO_OrderFX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmPO_Order_Initialize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmPO_Order_Initialize.Designer.cs">
+      <DependentUpon>FrmPO_Order_Initialize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmPO_Order_Initialize_log.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmPO_Order_Initialize_log.Designer.cs">
+      <DependentUpon>FrmPO_Order_Initialize_log.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmPO_Order_Manage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmPO_Order_Manage.Designer.cs">
+      <DependentUpon>FrmPO_Order_Manage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmPO_Order_Manage_OLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmPO_Order_Manage_OLD.Designer.cs">
+      <DependentUpon>FrmPO_Order_Manage_OLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmPO_Order_PC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmPO_Order_PC.Designer.cs">
+      <DependentUpon>FrmPO_Order_PC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmPO_PCDQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmPO_PCDQ.Designer.cs">
+      <DependentUpon>FrmPO_PCDQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmPO_PCFA_ORDER_CHS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmPO_PCFA_ORDER_CHS.Designer.cs">
+      <DependentUpon>FrmPO_PCFA_ORDER_CHS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmPO_PROCESSCONFIG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmPO_PROCESSCONFIG.Designer.cs">
+      <DependentUpon>FrmPO_PROCESSCONFIG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmPO_PROCESSPLAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmPO_PROCESSPLAN.Designer.cs">
+      <DependentUpon>FrmPO_PROCESSPLAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmPO_SCDD_PC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmPO_SCDD_PC.Designer.cs">
+      <DependentUpon>FrmPO_SCDD_PC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmPO_XCJXJH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmPO_XCJXJH.Designer.cs">
+      <DependentUpon>FrmPO_XCJXJH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmPO_XCKCDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmPO_XCKCDB.Designer.cs">
+      <DependentUpon>FrmPO_XCKCDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmPO_XCKCDR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmPO_XCKCDR.Designer.cs">
+      <DependentUpon>FrmPO_XCKCDR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmPO_XCKCRK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmPO_XCKCRK.Designer.cs">
+      <DependentUpon>FrmPO_XCKCRK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmPO_ZGJH_OLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmPO_ZGJH_OLD.Designer.cs">
+      <DependentUpon>FrmPO_ZGJH_OLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmPO_ZGJH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmPO_ZGJH.Designer.cs">
+      <DependentUpon>FrmPO_ZGJH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmPO_ZGJH_SD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmPO_ZGJH_SD.Designer.cs">
+      <DependentUpon>FrmPO_ZGJH_SD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmPO_ZGJH_SD_NEW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmPO_ZGJH_SD_NEW.Designer.cs">
+      <DependentUpon>FrmPO_ZGJH_SD_NEW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmPO_ZGJH_SD_NEWS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmPO_ZGJH_SD_NEWS.Designer.cs">
+      <DependentUpon>FrmPO_ZGJH_SD_NEWS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmPO_ZG_RESON_CX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmPO_ZG_RESON_CX.Designer.cs">
+      <DependentUpon>FrmPO_ZG_RESON_CX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmPO_ZG_ADD_RESON.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmPO_ZG_ADD_RESON.Designer.cs">
+      <DependentUpon>FrmPO_ZG_ADD_RESON.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\FrmTEST.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\FrmTEST.Designer.cs">
+      <DependentUpon>FrmTEST.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\Frm_Order_Manger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\Frm_Order_Manger.Designer.cs">
+      <DependentUpon>Frm_Order_Manger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\GPKWT\FrmPO_GPKWTPZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\GPKWT\FrmPO_GPKWTPZ.Designer.cs">
+      <DependentUpon>FrmPO_GPKWTPZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\GPKWT\FrmPO_GPKWT_VIEW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\GPKWT\FrmPO_GPKWT_VIEW.Designer.cs">
+      <DependentUpon>FrmPO_GPKWT_VIEW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\GPKWT\FrmPO_GPKWT_520.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\GPKWT\FrmPO_GPKWT_520.Designer.cs">
+      <DependentUpon>FrmPO_GPKWT_520.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\GPKWT\FrmPO_GPKWT_522.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\GPKWT\FrmPO_GPKWT_522.Designer.cs">
+      <DependentUpon>FrmPO_GPKWT_522.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\GPKWT\FrmPO_GPKWT_553.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\GPKWT\FrmPO_GPKWT_553.Designer.cs">
+      <DependentUpon>FrmPO_GPKWT_553.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\GPKWT\FrmPO_GPKWT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\GPKWT\FrmPO_GPKWT.Designer.cs">
+      <DependentUpon>FrmPO_GPKWT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\GPKWT\FrmPO_GPSJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\GPKWT\FrmPO_GPSJ.Designer.cs">
+      <DependentUpon>FrmPO_GPSJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\LabelModule.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PO\LabelModule.Designer.cs">
+      <DependentUpon>LabelModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\ViewModel\PO_SCDD_PC_ViewModel.cs" />
+    <Compile Include="PO\XCKWT\FrmPO_XCGPKWT_502.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCGPKWT_502.Designer.cs">
+      <DependentUpon>FrmPO_XCGPKWT_502.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCGPKWT_511.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCGPKWT_511.Designer.cs">
+      <DependentUpon>FrmPO_XCGPKWT_511.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWTPZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWTPZ.Designer.cs">
+      <DependentUpon>FrmPO_XCKWTPZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_01.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_02.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_03.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_04.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_04.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_04.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_05.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_05.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_05.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_10_12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_10_12.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_10_12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_10_17.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_10_17.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_10_17.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_10_26.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_10_26.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_10_26.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_10_27_BEI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_10_27_BEI.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_10_27_BEI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_10_27_NAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_10_27_NAN.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_10_27_NAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_10_28.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_10_28.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_10_28.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_10_29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_10_29.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_10_29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_10_30.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_10_30.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_10_30.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_10_31.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_10_31.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_10_31.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_10_32.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_10_32.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_10_32.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_10_33_BEI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_10_33_BEI.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_10_33_BEI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_10_33_NAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_10_33_NAN.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_10_33_NAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_10_33_Z_BEI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_10_33_Z_BEI.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_10_33_Z_BEI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_10_33_Z_NAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_10_33_Z_NAN.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_10_33_Z_NAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_10_34.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_10_34.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_10_34.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_10_4 .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_10_4 .Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_10_4 .cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_10_5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_10_5.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_10_5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_10_6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_10_6.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_10_6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_11_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_11_1.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_11_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_11_10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_11_10.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_11_10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_11_11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_11_11.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_11_11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_11_13.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_11_13.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_11_13.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_11_14.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_11_14.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_11_14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_11_15.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_11_15.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_11_15.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_11_18.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_11_18.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_11_18.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_11_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_11_2.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_11_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_11_3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_11_3.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_11_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_11_35.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_11_35.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_11_35.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_11_36.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_11_36.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_11_36.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_11_7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_11_7.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_11_7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_11_8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_11_8.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_11_8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_11_9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_11_9.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_11_9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_12_16.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_12_16.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_12_16.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_12_19_BEI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_12_19_BEI.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_12_19_BEI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_12_19_NAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_12_19_NAN.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_12_19_NAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_12_20_BEI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_12_20_BEI.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_12_20_BEI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_12_20_NAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_12_20_NAN.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_12_20_NAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_12_21_BEI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_12_21_BEI.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_12_21_BEI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_12_21_NAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_12_21_NAN.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_12_21_NAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_12_22_BEI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_12_22_BEI.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_12_22_BEI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_12_22_NAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_12_22_NAN.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_12_22_NAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_12_23_BEI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_12_23_BEI.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_12_23_BEI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_12_23_NAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_12_23_NAN.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_12_23_NAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_12_24_BEI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_12_24_BEI.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_12_24_BEI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_12_24_XI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_12_24_XI.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_12_24_XI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_12_38.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_12_38.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_12_38.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_VIEW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\XCKWT\FrmPO_XCKWT_VIEW.Designer.cs">
+      <DependentUpon>FrmPO_XCKWT_VIEW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP\Cls_ChangeSteel.cs" />
+    <Compile Include="PP\FrmKPCDDFX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP\FrmKPCDDFX.Designer.cs">
+      <DependentUpon>FrmKPCDDFX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP\FrmPPXCNYXHJL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP\FrmPPXCNYXHJL.Designer.cs">
+      <DependentUpon>FrmPPXCNYXHJL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP\FrmPPXCSCYXJL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP\FrmPPXCSCYXJL.Designer.cs">
+      <DependentUpon>FrmPPXCSCYXJL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP\FrmPP_GPKPSJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP\FrmPP_GPKPSJ.Designer.cs">
+      <DependentUpon>FrmPP_GPKPSJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP\FrmPP_GPXMSJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP\FrmPP_GPXMSJ.Designer.cs">
+      <DependentUpon>FrmPP_GPXMSJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP\FrmPP_GYLX_SELECT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP\FrmPP_GYLX_SELECT.Designer.cs">
+      <DependentUpon>FrmPP_GYLX_SELECT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP\FrmPP_JCJHCK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP\FrmPP_JCJHCK.Designer.cs">
+      <DependentUpon>FrmPP_JCJHCK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP\FrmPP_JHTZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP\FrmPP_JHTZ.Designer.cs">
+      <DependentUpon>FrmPP_JHTZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP\FrmPP_LCJH_BACK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP\FrmPP_LCJH_BACK.Designer.cs">
+      <DependentUpon>FrmPP_LCJH_BACK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP\FrmPP_LCJH_EDIT_PLAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP\FrmPP_LCJH_EDIT_PLAN.Designer.cs">
+      <DependentUpon>FrmPP_LCJH_EDIT_PLAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP\FrmPP_LGGXJXSCMES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP\FrmPP_LGGXJXSCMES.Designer.cs">
+      <DependentUpon>FrmPP_LGGXJXSCMES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP\FrmPP_LGPC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP\FrmPP_LGPC.Designer.cs">
+      <DependentUpon>FrmPP_LGPC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP\FrmPP_ZGPC_OLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP\FrmPP_ZGPC_OLD.Designer.cs">
+      <DependentUpon>FrmPP_ZGPC_OLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP\FrmPP_ZGPC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP\FrmPP_ZGPC.Designer.cs">
+      <DependentUpon>FrmPP_ZGPC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP\FrmPP_ZJDD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP\FrmPP_ZJDD.Designer.cs">
+      <DependentUpon>FrmPP_ZJDD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP\FrmPP_JCJH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP\FrmPP_JCJH.Designer.cs">
+      <DependentUpon>FrmPP_JCJH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP\FrmPP_LCJH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP\FrmPP_LCJH.Designer.cs">
+      <DependentUpon>FrmPP_LCJH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP\FrmPP_JCJH1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP\FrmPP_JCJH1.Designer.cs">
+      <DependentUpon>FrmPP_JCJH1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP\FrmPP_SELECT_WL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP\FrmPP_SELECT_WL.Designer.cs">
+      <DependentUpon>FrmPP_SELECT_WL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PQ\FrmPB_LGGTT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PQ\FrmPB_LGGTT.Designer.cs">
+      <DependentUpon>FrmPB_LGGTT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PQ\FrmPB_XCKCX_OLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PQ\FrmPB_XCKCX_OLD.Designer.cs">
+      <DependentUpon>FrmPB_XCKCX_OLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PQ\FrmPQ_BFWHGL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PQ\FrmPQ_BFWHGL.Designer.cs">
+      <DependentUpon>FrmPQ_BFWHGL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PQ\FrmPQ_GPCKD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PQ\FrmPQ_GPCKD.Designer.cs">
+      <DependentUpon>FrmPQ_GPCKD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PQ\FrmPQ_GPFYZCMX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PQ\FrmPQ_GPFYZCMX.Designer.cs">
+      <DependentUpon>FrmPQ_GPFYZCMX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PQ\FrmPQ_GPSJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PQ\FrmPQ_GPSJ.Designer.cs">
+      <DependentUpon>FrmPQ_GPSJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PQ\FrmPQ_GPSJ_CK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PQ\FrmPQ_GPSJ_CK.Designer.cs">
+      <DependentUpon>FrmPQ_GPSJ_CK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PQ\FrmPQ_KPJHCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PQ\FrmPQ_KPJHCX.Designer.cs">
+      <DependentUpon>FrmPQ_KPJHCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PQ\FrmPQ_KPXMCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PQ\FrmPQ_KPXMCX.Designer.cs">
+      <DependentUpon>FrmPQ_KPXMCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PQ\FrmPQ_XCCKD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PQ\FrmPQ_XCCKD.Designer.cs">
+      <DependentUpon>FrmPQ_XCCKD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PQ\FrmPQ_XCZCMX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PQ\FrmPQ_XCZCMX.Designer.cs">
+      <DependentUpon>FrmPQ_XCZCMX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PQ\FrmPQ_XMJHCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PQ\FrmPQ_XMJHCX.Designer.cs">
+      <DependentUpon>FrmPQ_XMJHCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PQ\FrmPQ_XMJHCXBXG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PQ\FrmPQ_XMJHCXBXG.Designer.cs">
+      <DependentUpon>FrmPQ_XMJHCXBXG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PR\FrmPR_JHQTJ_MX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PR\FrmPR_JHQTJ_MX.Designer.cs">
+      <DependentUpon>FrmPR_JHQTJ_MX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PR\FrmPR_LGFJCJH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PR\FrmPR_LGFJCJH.Designer.cs">
+      <DependentUpon>FrmPR_LGFJCJH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PR\FrmPR_LGJCRemark.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PR\FrmPR_LGJCRemark.Designer.cs">
+      <DependentUpon>FrmPR_LGJCRemark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PR\FrmPR_LGJHCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PR\FrmPR_LGJHCX.Designer.cs">
+      <DependentUpon>FrmPR_LGJHCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PR\FrmPR_LG_GTT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PR\FrmPR_LG_GTT.Designer.cs">
+      <DependentUpon>FrmPR_LG_GTT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PR\FrmPR_LG_PLAN_EDIT_LOG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PR\FrmPR_LG_PLAN_EDIT_LOG.Designer.cs">
+      <DependentUpon>FrmPR_LG_PLAN_EDIT_LOG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PR\FrmPR_ORDER_Query_ZG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PR\FrmPR_ORDER_Query_ZG.Designer.cs">
+      <DependentUpon>FrmPR_ORDER_Query_ZG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PR\FrmPR_STOVE_DEL_LOG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PR\FrmPR_STOVE_DEL_LOG.Designer.cs">
+      <DependentUpon>FrmPR_STOVE_DEL_LOG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PR\FrmPR_ZGJH_CX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PR\FrmPR_ZGJH_CX.Designer.cs">
+      <DependentUpon>FrmPR_ZGJH_CX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PR\FrmPR_ZGJH_TJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PR\FrmPR_ZGJH_TJ.Designer.cs">
+      <DependentUpon>FrmPR_ZGJH_TJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PR\FrmPR_LGJH_TJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PR\FrmPR_LGJH_TJ.Designer.cs">
+      <DependentUpon>FrmPR_LGJH_TJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PR\FrmPR_ORDER_Query.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PR\FrmPR_ORDER_Query.Designer.cs">
+      <DependentUpon>FrmPR_ORDER_Query.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PR\FrmPR_TS_PLAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PR\FrmPR_TS_PLAN.Designer.cs">
+      <DependentUpon>FrmPR_TS_PLAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PR\Frm_PR_LG_GTT2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PR\Frm_PR_LG_GTT2.Designer.cs">
+      <DependentUpon>Frm_PR_LG_GTT2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PR\Frm_PR_ORDER_GZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PR\Frm_PR_ORDER_GZ.Designer.cs">
+      <DependentUpon>Frm_PR_ORDER_GZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PR\Frm_PR_ORDER_MONITOR_ROLL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PR\Frm_PR_ORDER_MONITOR_ROLL.Designer.cs">
+      <DependentUpon>Frm_PR_ORDER_MONITOR_ROLL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PR\Frm_PR_XCJHTJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PR\Frm_PR_XCJHTJ.Designer.cs">
+      <DependentUpon>Frm_PR_XCJHTJ.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="PB\FrmOutTable.resx">
+      <DependentUpon>FrmOutTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_BCBZ.resx">
+      <DependentUpon>FrmPB_BCBZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_BCBZGZ.resx">
+      <DependentUpon>FrmPB_BCBZGZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_CNLR.resx">
+      <DependentUpon>FrmPB_CNLR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_CNLR_Edit.resx">
+      <DependentUpon>FrmPB_CNLR_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_GLCN_OLD.resx">
+      <DependentUpon>FrmPB_GLCN_OLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_GPJSCN_EDIT.resx">
+      <DependentUpon>FrmPB_GPJSCN_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_GPKCK_EDIT.resx">
+      <DependentUpon>FrmPB_GPKCK_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_GPKKW_EDIT.resx">
+      <DependentUpon>FrmPB_GPKKW_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_GPKQY_EDIT.resx">
+      <DependentUpon>FrmPB_GPKQY_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_GWLSCN.resx">
+      <DependentUpon>FrmPB_GWLSCN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_GWLSCN_EDIT.resx">
+      <DependentUpon>FrmPB_GWLSCN_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_GWPB.resx">
+      <DependentUpon>FrmPB_GWPB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_GWZYSJ1.resx">
+      <DependentUpon>FrmPB_GWZYSJ1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_GW_EDIT.resx">
+      <DependentUpon>FrmPB_GW_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_GX_EDIT.resx">
+      <DependentUpon>FrmPB_GX_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_GYLX.resx">
+      <DependentUpon>FrmPB_GYLX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_GZZJCLS_EDIT.resx">
+      <DependentUpon>FrmPB_GZZJCLS_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_HLKGL_OLD.resx">
+      <DependentUpon>FrmPB_HLKGL_OLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_KHJWH.resx">
+      <DependentUpon>FrmPB_KHJWH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_KHJWH1.resx">
+      <DependentUpon>FrmPB_KHJWH1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_LGHJCSJ_EDIT.resx">
+      <DependentUpon>FrmPB_LGHJCSJ_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_LGTLSJ_EDIT.resx">
+      <DependentUpon>FrmPB_LGTLSJ_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_LZHJC_EDIT.resx">
+      <DependentUpon>FrmPB_LZHJC_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_MLZL.resx">
+      <DependentUpon>FrmPB_MLZL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_MLZL_EDIT.resx">
+      <DependentUpon>FrmPB_MLZL_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_NYKZCB_EDIT.resx">
+      <DependentUpon>FrmPB_NYKZCB_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_SCLX.resx">
+      <DependentUpon>FrmPB_SCLX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_SELECT_GZ.resx">
+      <DependentUpon>FrmPB_SELECT_GZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_TSBZXX_EDIT.resx">
+      <DependentUpon>FrmPB_TSBZXX_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_TSCF_EDIT.resx">
+      <DependentUpon>FrmPB_TSCF_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_TSTJ_OLD.resx">
+      <DependentUpon>FrmPB_TSTJ_OLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_WL.resx">
+      <DependentUpon>FrmPB_WL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_XCKCK_EDIT.resx">
+      <DependentUpon>FrmPB_XCKCK_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_XCKKW_EDIT.resx">
+      <DependentUpon>FrmPB_XCKKW_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_XCKQY_EDIT.resx">
+      <DependentUpon>FrmPB_XCKQY_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_XCXMTJ.resx">
+      <DependentUpon>FrmPB_XCXMTJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_ZGBSCGZ.resx">
+      <DependentUpon>FrmPB_ZGBSCGZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_ZGHGGSJ_EDIT.resx">
+      <DependentUpon>FrmPB_ZGHGGSJ_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_ZGJSCN_EDIT.resx">
+      <DependentUpon>FrmPB_ZGJSCN_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_GZSCTJ.resx">
+      <DependentUpon>FrmPB_GZSCTJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_GZSCTJWH.resx">
+      <DependentUpon>FrmPB_GZSCTJWH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_GZZJCLS.resx">
+      <DependentUpon>FrmPB_GZZJCLS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_GPKGL.resx">
+      <DependentUpon>FrmPB_GPKGL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_GX.resx">
+      <DependentUpon>FrmPB_GX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_KDZGZ.resx">
+      <DependentUpon>FrmPB_KDZGZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_NYCB.resx">
+      <DependentUpon>FrmPB_NYCB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_XCKGL.resx">
+      <DependentUpon>FrmPB_XCKGL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_ZGKSCGZ.resx">
+      <DependentUpon>FrmPB_ZGKSCGZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_ZGPGWH_OLD.resx">
+      <DependentUpon>FrmPB_ZGPGWH_OLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_ZGSCGG.resx">
+      <DependentUpon>FrmPB_ZGSCGG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_ZGSCGL_OLD.resx">
+      <DependentUpon>FrmPB_ZGSCGL_OLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_ZLTSFG_EDIT.resx">
+      <DependentUpon>FrmPB_ZLTSFG_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_ZXGSWH01.resx">
+      <DependentUpon>FrmPB_ZXGSWH01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_ZXHGGSJ.resx">
+      <DependentUpon>FrmPB_ZXHGGSJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_SELECT_ZXBZ.resx">
+      <DependentUpon>FrmPB_SELECT_ZXBZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PB\FrmPB_ZXJRLTJ.resx">
+      <DependentUpon>FrmPB_ZXJRLTJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\APS\FrmPO_APSconfig.resx">
+      <DependentUpon>FrmPO_APSconfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\APS\FrmPO_APS_Addjc.resx">
+      <DependentUpon>FrmPO_APS_Addjc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\APS\FrmPO_APS_LGJCJHPX.resx">
+      <DependentUpon>FrmPO_APS_LGJCJHPX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\APS\FrmPO_APS_LGJCJHPX_QUERY.resx">
+      <DependentUpon>FrmPO_APS_LGJCJHPX_QUERY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\APS\FrmPO_APS_LGPC.resx">
+      <DependentUpon>FrmPO_APS_LGPC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\APS\FrmPO_APS_LGPC_NEW.resx">
+      <DependentUpon>FrmPO_APS_LGPC_NEW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\APS\FrmPO_APS_LGPC_NEW_BXG.resx">
+      <DependentUpon>FrmPO_APS_LGPC_NEW_BXG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\APS\FrmPO_APS_OrderPJ.resx">
+      <DependentUpon>FrmPO_APS_OrderPJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\APS\FrmPO_APS_Order_LGFX_NEW.resx">
+      <DependentUpon>FrmPO_APS_Order_LGFX_NEW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\APS\FrmPO_APS_Order_ZGFX.resx">
+      <DependentUpon>FrmPO_APS_Order_ZGFX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\APS\FrmPO_APS_Select_WL.resx">
+      <DependentUpon>FrmPO_APS_Select_WL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\APS\FrmPO_APS_ZGJSCN.resx">
+      <DependentUpon>FrmPO_APS_ZGJSCN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\APS\FrmPO_APS_ZG_Plan.resx">
+      <DependentUpon>FrmPO_APS_ZG_Plan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\APS\FrmPO_APS_ZG_PLAN_LOG.resx">
+      <DependentUpon>FrmPO_APS_ZG_PLAN_LOG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\APS\FrmPO_select_GZ.resx">
+      <DependentUpon>FrmPO_select_GZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\APS\FrmPO_APS_Order_ZGFX_NEW.resx">
+      <DependentUpon>FrmPO_APS_Order_ZGFX_NEW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmDateBJ.resx">
+      <DependentUpon>FrmDateBJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmPO_SELECT_WL.resx">
+      <DependentUpon>FrmPO_SELECT_WL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmPO_Allot_CCM.resx">
+      <DependentUpon>FrmPO_Allot_CCM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmPO_Allot_Line.resx">
+      <DependentUpon>FrmPO_Allot_Line.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmPO_GCRL.resx">
+      <DependentUpon>FrmPO_GCRL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmPO_GPCHLK.resx">
+      <DependentUpon>FrmPO_GPCHLK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmPO_GPDB.resx">
+      <DependentUpon>FrmPO_GPDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmPO_GPKCTB.resx">
+      <DependentUpon>FrmPO_GPKCTB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmPO_GPRHLK.resx">
+      <DependentUpon>FrmPO_GPRHLK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmPO_GPRK.resx">
+      <DependentUpon>FrmPO_GPRK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmPO_GPSJ_DEL.resx">
+      <DependentUpon>FrmPO_GPSJ_DEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmPO_Improt_Order.resx">
+      <DependentUpon>FrmPO_Improt_Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmPO_KCDR.resx">
+      <DependentUpon>FrmPO_KCDR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmPO_KPJH_NEW.resx">
+      <DependentUpon>FrmPO_KPJH_NEW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmPO_KPJH.resx">
+      <DependentUpon>FrmPO_KPJH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmPO_LogGroup.resx">
+      <DependentUpon>FrmPO_LogGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmPO_OrderFX.resx">
+      <DependentUpon>FrmPO_OrderFX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmPO_Order_Initialize.resx">
+      <DependentUpon>FrmPO_Order_Initialize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmPO_Order_Initialize_log.resx">
+      <DependentUpon>FrmPO_Order_Initialize_log.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmPO_Order_Manage.resx">
+      <DependentUpon>FrmPO_Order_Manage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmPO_Order_Manage_OLD.resx">
+      <DependentUpon>FrmPO_Order_Manage_OLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmPO_Order_PC.resx">
+      <DependentUpon>FrmPO_Order_PC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmPO_PCDQ.resx">
+      <DependentUpon>FrmPO_PCDQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmPO_PCFA_ORDER_CHS.resx">
+      <DependentUpon>FrmPO_PCFA_ORDER_CHS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmPO_PROCESSCONFIG.resx">
+      <DependentUpon>FrmPO_PROCESSCONFIG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmPO_PROCESSPLAN.resx">
+      <DependentUpon>FrmPO_PROCESSPLAN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmPO_SCDD_PC.resx">
+      <DependentUpon>FrmPO_SCDD_PC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmPO_XCJXJH.resx">
+      <DependentUpon>FrmPO_XCJXJH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmPO_XCKCDB.resx">
+      <DependentUpon>FrmPO_XCKCDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmPO_XCKCDR.resx">
+      <DependentUpon>FrmPO_XCKCDR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmPO_XCKCRK.resx">
+      <DependentUpon>FrmPO_XCKCRK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmPO_ZGJH_OLD.resx">
+      <DependentUpon>FrmPO_ZGJH_OLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmPO_ZGJH.resx">
+      <DependentUpon>FrmPO_ZGJH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmPO_ZGJH_SD.resx">
+      <DependentUpon>FrmPO_ZGJH_SD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmPO_ZGJH_SD_NEW.resx">
+      <DependentUpon>FrmPO_ZGJH_SD_NEW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmPO_ZGJH_SD_NEWS.resx">
+      <DependentUpon>FrmPO_ZGJH_SD_NEWS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmPO_ZG_RESON_CX.resx">
+      <DependentUpon>FrmPO_ZG_RESON_CX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmPO_ZG_ADD_RESON.resx">
+      <DependentUpon>FrmPO_ZG_ADD_RESON.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\FrmTEST.resx">
+      <DependentUpon>FrmTEST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\Frm_Order_Manger.resx">
+      <DependentUpon>Frm_Order_Manger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\GPKWT\FrmPO_GPKWTPZ.resx">
+      <DependentUpon>FrmPO_GPKWTPZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\GPKWT\FrmPO_GPKWT_VIEW.resx">
+      <DependentUpon>FrmPO_GPKWT_VIEW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\GPKWT\FrmPO_GPKWT_520.resx">
+      <DependentUpon>FrmPO_GPKWT_520.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\GPKWT\FrmPO_GPKWT_522.resx">
+      <DependentUpon>FrmPO_GPKWT_522.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\GPKWT\FrmPO_GPKWT_553.resx">
+      <DependentUpon>FrmPO_GPKWT_553.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\GPKWT\FrmPO_GPKWT.resx">
+      <DependentUpon>FrmPO_GPKWT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\GPKWT\FrmPO_GPSJ.resx">
+      <DependentUpon>FrmPO_GPSJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\LabelModule.resx">
+      <DependentUpon>LabelModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCGPKWT_502.resx">
+      <DependentUpon>FrmPO_XCGPKWT_502.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCGPKWT_511.resx">
+      <DependentUpon>FrmPO_XCGPKWT_511.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWTPZ.resx">
+      <DependentUpon>FrmPO_XCKWTPZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_01.resx">
+      <DependentUpon>FrmPO_XCKWT_01.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_02.resx">
+      <DependentUpon>FrmPO_XCKWT_02.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_03.resx">
+      <DependentUpon>FrmPO_XCKWT_03.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_04.resx">
+      <DependentUpon>FrmPO_XCKWT_04.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_05.resx">
+      <DependentUpon>FrmPO_XCKWT_05.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_10_12.resx">
+      <DependentUpon>FrmPO_XCKWT_10_12.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_10_17.resx">
+      <DependentUpon>FrmPO_XCKWT_10_17.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_10_26.resx">
+      <DependentUpon>FrmPO_XCKWT_10_26.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_10_27_BEI.resx">
+      <DependentUpon>FrmPO_XCKWT_10_27_BEI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_10_27_NAN.resx">
+      <DependentUpon>FrmPO_XCKWT_10_27_NAN.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_10_28.resx">
+      <DependentUpon>FrmPO_XCKWT_10_28.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_10_29.resx">
+      <DependentUpon>FrmPO_XCKWT_10_29.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_10_30.resx">
+      <DependentUpon>FrmPO_XCKWT_10_30.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_10_31.resx">
+      <DependentUpon>FrmPO_XCKWT_10_31.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_10_32.resx">
+      <DependentUpon>FrmPO_XCKWT_10_32.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_10_33_BEI.resx">
+      <DependentUpon>FrmPO_XCKWT_10_33_BEI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_10_33_NAN.resx">
+      <DependentUpon>FrmPO_XCKWT_10_33_NAN.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_10_33_Z_BEI.resx">
+      <DependentUpon>FrmPO_XCKWT_10_33_Z_BEI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_10_33_Z_NAN.resx">
+      <DependentUpon>FrmPO_XCKWT_10_33_Z_NAN.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_10_34.resx">
+      <DependentUpon>FrmPO_XCKWT_10_34.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_10_4 .resx">
+      <DependentUpon>FrmPO_XCKWT_10_4 .cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_10_5.resx">
+      <DependentUpon>FrmPO_XCKWT_10_5.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_10_6.resx">
+      <DependentUpon>FrmPO_XCKWT_10_6.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_11_1.resx">
+      <DependentUpon>FrmPO_XCKWT_11_1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_11_10.resx">
+      <DependentUpon>FrmPO_XCKWT_11_10.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_11_11.resx">
+      <DependentUpon>FrmPO_XCKWT_11_11.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_11_13.resx">
+      <DependentUpon>FrmPO_XCKWT_11_13.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_11_14.resx">
+      <DependentUpon>FrmPO_XCKWT_11_14.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_11_15.resx">
+      <DependentUpon>FrmPO_XCKWT_11_15.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_11_18.resx">
+      <DependentUpon>FrmPO_XCKWT_11_18.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_11_2.resx">
+      <DependentUpon>FrmPO_XCKWT_11_2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_11_3.resx">
+      <DependentUpon>FrmPO_XCKWT_11_3.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_11_35.resx">
+      <DependentUpon>FrmPO_XCKWT_11_35.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_11_36.resx">
+      <DependentUpon>FrmPO_XCKWT_11_36.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_11_7.resx">
+      <DependentUpon>FrmPO_XCKWT_11_7.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_11_8.resx">
+      <DependentUpon>FrmPO_XCKWT_11_8.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_11_9.resx">
+      <DependentUpon>FrmPO_XCKWT_11_9.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_12_16.resx">
+      <DependentUpon>FrmPO_XCKWT_12_16.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_12_19_BEI.resx">
+      <DependentUpon>FrmPO_XCKWT_12_19_BEI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_12_19_NAN.resx">
+      <DependentUpon>FrmPO_XCKWT_12_19_NAN.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_12_20_BEI.resx">
+      <DependentUpon>FrmPO_XCKWT_12_20_BEI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_12_20_NAN.resx">
+      <DependentUpon>FrmPO_XCKWT_12_20_NAN.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_12_21_BEI.resx">
+      <DependentUpon>FrmPO_XCKWT_12_21_BEI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_12_21_NAN.resx">
+      <DependentUpon>FrmPO_XCKWT_12_21_NAN.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_12_22_BEI.resx">
+      <DependentUpon>FrmPO_XCKWT_12_22_BEI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_12_22_NAN.resx">
+      <DependentUpon>FrmPO_XCKWT_12_22_NAN.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_12_23_BEI.resx">
+      <DependentUpon>FrmPO_XCKWT_12_23_BEI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_12_23_NAN.resx">
+      <DependentUpon>FrmPO_XCKWT_12_23_NAN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_12_24_BEI.resx">
+      <DependentUpon>FrmPO_XCKWT_12_24_BEI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_12_24_XI.resx">
+      <DependentUpon>FrmPO_XCKWT_12_24_XI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT.resx">
+      <DependentUpon>FrmPO_XCKWT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_12_38.resx">
+      <DependentUpon>FrmPO_XCKWT_12_38.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\XCKWT\FrmPO_XCKWT_VIEW.resx">
+      <DependentUpon>FrmPO_XCKWT_VIEW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP\FrmKPCDDFX.resx">
+      <DependentUpon>FrmKPCDDFX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP\FrmPPXCNYXHJL.resx">
+      <DependentUpon>FrmPPXCNYXHJL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP\FrmPPXCSCYXJL.resx">
+      <DependentUpon>FrmPPXCSCYXJL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP\FrmPP_GPKPSJ.resx">
+      <DependentUpon>FrmPP_GPKPSJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP\FrmPP_GPXMSJ.resx">
+      <DependentUpon>FrmPP_GPXMSJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP\FrmPP_GYLX_SELECT.resx">
+      <DependentUpon>FrmPP_GYLX_SELECT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP\FrmPP_JCJHCK.resx">
+      <DependentUpon>FrmPP_JCJHCK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP\FrmPP_JHTZ.resx">
+      <DependentUpon>FrmPP_JHTZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP\FrmPP_LCJH_BACK.resx">
+      <DependentUpon>FrmPP_LCJH_BACK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP\FrmPP_LCJH_EDIT_PLAN.resx">
+      <DependentUpon>FrmPP_LCJH_EDIT_PLAN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP\FrmPP_LGGXJXSCMES.resx">
+      <DependentUpon>FrmPP_LGGXJXSCMES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP\FrmPP_LGPC.resx">
+      <DependentUpon>FrmPP_LGPC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP\FrmPP_ZGPC_OLD.resx">
+      <DependentUpon>FrmPP_ZGPC_OLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP\FrmPP_ZGPC.resx">
+      <DependentUpon>FrmPP_ZGPC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP\FrmPP_ZJDD.resx">
+      <DependentUpon>FrmPP_ZJDD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP\FrmPP_JCJH.resx">
+      <DependentUpon>FrmPP_JCJH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP\FrmPP_LCJH.resx">
+      <DependentUpon>FrmPP_LCJH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP\FrmPP_JCJH1.resx">
+      <DependentUpon>FrmPP_JCJH1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP\FrmPP_SELECT_WL.resx">
+      <DependentUpon>FrmPP_SELECT_WL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PQ\FrmPB_LGGTT.resx">
+      <DependentUpon>FrmPB_LGGTT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PQ\FrmPB_XCKCX_OLD.resx">
+      <DependentUpon>FrmPB_XCKCX_OLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PQ\FrmPQ_BFWHGL.resx">
+      <DependentUpon>FrmPQ_BFWHGL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PQ\FrmPQ_GPCKD.resx">
+      <DependentUpon>FrmPQ_GPCKD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PQ\FrmPQ_GPFYZCMX.resx">
+      <DependentUpon>FrmPQ_GPFYZCMX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PQ\FrmPQ_GPSJ.resx">
+      <DependentUpon>FrmPQ_GPSJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PQ\FrmPQ_GPSJ_CK.resx">
+      <DependentUpon>FrmPQ_GPSJ_CK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PQ\FrmPQ_KPJHCX.resx">
+      <DependentUpon>FrmPQ_KPJHCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PQ\FrmPQ_KPXMCX.resx">
+      <DependentUpon>FrmPQ_KPXMCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PQ\FrmPQ_XCCKD.resx">
+      <DependentUpon>FrmPQ_XCCKD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PQ\FrmPQ_XCZCMX.resx">
+      <DependentUpon>FrmPQ_XCZCMX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PQ\FrmPQ_XMJHCX.resx">
+      <DependentUpon>FrmPQ_XMJHCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PQ\FrmPQ_XMJHCXBXG.resx">
+      <DependentUpon>FrmPQ_XMJHCXBXG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="PR\FrmPR_JHQTJ_MX.resx">
+      <DependentUpon>FrmPR_JHQTJ_MX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PR\FrmPR_LGFJCJH.resx">
+      <DependentUpon>FrmPR_LGFJCJH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PR\FrmPR_LGJCRemark.resx">
+      <DependentUpon>FrmPR_LGJCRemark.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PR\FrmPR_LGJHCX.resx">
+      <DependentUpon>FrmPR_LGJHCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PR\FrmPR_LG_GTT.resx">
+      <DependentUpon>FrmPR_LG_GTT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PR\FrmPR_LG_PLAN_EDIT_LOG.resx">
+      <DependentUpon>FrmPR_LG_PLAN_EDIT_LOG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PR\FrmPR_ORDER_Query_ZG.resx">
+      <DependentUpon>FrmPR_ORDER_Query_ZG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PR\FrmPR_STOVE_DEL_LOG.resx">
+      <DependentUpon>FrmPR_STOVE_DEL_LOG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PR\FrmPR_ZGJH_CX.resx">
+      <DependentUpon>FrmPR_ZGJH_CX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PR\FrmPR_ZGJH_TJ.resx">
+      <DependentUpon>FrmPR_ZGJH_TJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PR\FrmPR_LGJH_TJ.resx">
+      <DependentUpon>FrmPR_LGJH_TJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PR\FrmPR_ORDER_Query.resx">
+      <DependentUpon>FrmPR_ORDER_Query.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PR\FrmPR_TS_PLAN.resx">
+      <DependentUpon>FrmPR_TS_PLAN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PR\Frm_PR_LG_GTT2.resx">
+      <DependentUpon>Frm_PR_LG_GTT2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PR\Frm_PR_ORDER_GZ.resx">
+      <DependentUpon>Frm_PR_ORDER_GZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PR\Frm_PR_ORDER_MONITOR_ROLL.resx">
+      <DependentUpon>Frm_PR_ORDER_MONITOR_ROLL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PR\Frm_PR_XCJHTJ.resx">
+      <DependentUpon>Frm_PR_XCJHTJ.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{15b3290b-9a04-4a98-bdba-f378b2504706}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{e3d8759a-c5eb-402d-9f10-f5c6029a8d1a}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MODEL\MODEL.csproj">
+      <Project>{5ad207cc-7fa4-4b7c-bbe5-5ef48beaf9ea}</Project>
+      <Name>MODEL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XGCAP.UI.Q\XGCAP.UI.Q.csproj">
+      <Project>{25cafa0e-1c31-46ff-ae0e-31728997ce5b}</Project>
+      <Name>XGCAP.UI.Q</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\MODEL.Mod_TMO_ORDER.datasource" />
+    <None Include="Properties\DataSources\MODEL.Mod_TPB_BORDER_GRD.datasource" />
+    <None Include="Properties\DataSources\MODEL.Mod_TPB_CAST_STOVE.datasource" />
+    <None Include="Properties\DataSources\MODEL.Mod_TPB_CAST_TIME.datasource" />
+    <None Include="Properties\DataSources\MODEL.Mod_TPB_CCM_CONTRAST.datasource" />
+    <None Include="Properties\DataSources\MODEL.Mod_TPB_CHANGESPEC_TIME.datasource" />
+    <None Include="Properties\DataSources\MODEL.Mod_TPB_COG_CAPACITY.datasource" />
+    <None Include="Properties\DataSources\MODEL.Mod_TPB_COP_CAPATITY.datasource" />
+    <None Include="Properties\DataSources\MODEL.Mod_TPB_ENDTOEND_GRD.datasource" />
+    <None Include="Properties\DataSources\MODEL.Mod_TPB_LADLE.datasource" />
+    <None Include="Properties\DataSources\MODEL.Mod_TPB_LINE_SPEC.datasource" />
+    <None Include="Properties\DataSources\MODEL.Mod_TPB_MACHINE_CAPACITY.datasource" />
+    <None Include="Properties\DataSources\MODEL.Mod_TPB_RINSE_GRD.datasource" />
+    <None Include="Properties\DataSources\MODEL.Mod_TPB_STATION_CAPACITY.datasource" />
+    <None Include="Properties\DataSources\MODEL.Mod_TPP_SLAB_PLAN_KP.datasource" />
+    <None Include="Properties\DataSources\MODEL.Mod_TPP_SLAB_PLAN_XM.datasource" />
+    <None Include="Properties\DataSources\MODEL.Mod_TRP_PLAN_ROLL.datasource" />
+    <None Include="Properties\DataSources\MODEL.Mod_TSC_SLAB_MAIN1.datasource" />
+    <None Include="Properties\DataSources\MODEL.Mod_TSC_SLAB_MAIN_KP.datasource" />
+    <None Include="Properties\DataSources\MODEL.Mod_TSC_SLAB_MAIN_XM.datasource" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

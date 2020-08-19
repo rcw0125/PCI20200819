@@ -1,0 +1,1591 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{25CAFA0E-1C31-46FF-AE0E-31728997CE5B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XGCAP.UI.Q</RootNamespace>
+    <AssemblyName>XGCAP.UI.Q</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells, Version=5.3.1.0, Culture=neutral, PublicKeyToken=9ec0ff091d04b091, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\XGPCI\NeedDll\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v17.2.Core, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Images.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v17.2.Core, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v17.2.Core, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v17.2.Core, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v17.2.Export, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v17.2.Core, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v17.2.Core, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v17.2.Core, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Spreadsheet.v17.2.Core, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.2.Wizard, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v17.2.Core, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v17.2.UI, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v17.2.Extensions, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraSpreadsheet.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\XGPCI\NeedDll\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="RV.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RV.UI\bin\Debug\RV.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QB\FrmQB_BHGYY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_BHGYY.Designer.cs">
+      <DependentUpon>FrmQB_BHGYY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_BZDR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_BZDR.Designer.cs">
+      <DependentUpon>FrmQB_BZDR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_BZLB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_BZLB.Designer.cs">
+      <DependentUpon>FrmQB_BZLB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_BZLB_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_BZLB_EDIT.Designer.cs">
+      <DependentUpon>FrmQB_BZLB_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_BZWDCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_BZWDCX.Designer.cs">
+      <DependentUpon>FrmQB_BZWDCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_BZWDLB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_BZWDLB.Designer.cs">
+      <DependentUpon>FrmQB_BZWDLB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_BZWDLB_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_BZWDLB_EDIT.Designer.cs">
+      <DependentUpon>FrmQB_BZWDLB_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_BZWDSC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_BZWDSC.Designer.cs">
+      <DependentUpon>FrmQB_BZWDSC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_BZYQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_BZYQ.Designer.cs">
+      <DependentUpon>FrmQB_BZYQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_BZYQ_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_BZYQ_EDIT.Designer.cs">
+      <DependentUpon>FrmQB_BZYQ_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_BZ_ZYX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_BZ_ZYX.Designer.cs">
+      <DependentUpon>FrmQB_BZ_ZYX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_DZGPPP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_DZGPPP.Designer.cs">
+      <DependentUpon>FrmQB_DZGPPP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_GPDCPP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_GPDCPP.Designer.cs">
+      <DependentUpon>FrmQB_GPDCPP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_GPDCPP_NEW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_GPDCPP_NEW.Designer.cs">
+      <DependentUpon>FrmQB_GPDCPP_NEW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_GPDCWH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_GPDCWH.Designer.cs">
+      <DependentUpon>FrmQB_GPDCWH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_GPDCWH_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_GPDCWH_EDIT.Designer.cs">
+      <DependentUpon>FrmQB_GPDCWH_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_GPDZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_GPDZ.Designer.cs">
+      <DependentUpon>FrmQB_GPDZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_GYLX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_GYLX.Designer.cs">
+      <DependentUpon>FrmQB_GYLX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_GYLX_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_GYLX_EDIT.Designer.cs">
+      <DependentUpon>FrmQB_GYLX_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_GZPMWH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_GZPMWH.Designer.cs">
+      <DependentUpon>FrmQB_GZPMWH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_GZPMWH_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_GZPMWH_EDIT.Designer.cs">
+      <DependentUpon>FrmQB_GZPMWH_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_GZPZWH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_GZPZWH.Designer.cs">
+      <DependentUpon>FrmQB_GZPZWH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_GZPZWH_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_GZPZWH_EDIT.Designer.cs">
+      <DependentUpon>FrmQB_GZPZWH_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_GZSCGZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_GZSCGZ.Designer.cs">
+      <DependentUpon>FrmQB_GZSCGZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_HLGYWH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_HLGYWH.Designer.cs">
+      <DependentUpon>FrmQB_HLGYWH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_HLGYWH_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_HLGYWH_EDIT.Designer.cs">
+      <DependentUpon>FrmQB_HLGYWH_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_HLYQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_HLYQ.Designer.cs">
+      <DependentUpon>FrmQB_HLYQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_HLYQ_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_HLYQ_EDIT.Designer.cs">
+      <DependentUpon>FrmQB_HLYQ_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_JCSJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_JCSJ.Designer.cs">
+      <DependentUpon>FrmQB_JCSJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_JCSJ_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_JCSJ_EDIT.Designer.cs">
+      <DependentUpon>FrmQB_JCSJ_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_JYLB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_JYLB.Designer.cs">
+      <DependentUpon>FrmQB_JYLB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_JYLB_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_JYLB_EDIT.Designer.cs">
+      <DependentUpon>FrmQB_JYLB_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_KPJRLSJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_KPJRLSJ.Designer.cs">
+      <DependentUpon>FrmQB_KPJRLSJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_LCP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_LCP.Designer.cs">
+      <DependentUpon>FrmQB_LCP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_PJZZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_PJZZ.Designer.cs">
+      <DependentUpon>FrmQB_PJZZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_QYMB_Add_MAIN_JSZX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_QYMB_Add_MAIN_JSZX.Designer.cs">
+      <DependentUpon>FrmQB_QYMB_Add_MAIN_JSZX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_QYMB_JSZX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_QYMB_JSZX.Designer.cs">
+      <DependentUpon>FrmQB_QYMB_JSZX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_QYMB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_QYMB.Designer.cs">
+      <DependentUpon>FrmQB_QYMB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_QYMB_Add_MAIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_QYMB_Add_MAIN.Designer.cs">
+      <DependentUpon>FrmQB_QYMB_Add_MAIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_QYMC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_QYMC.Designer.cs">
+      <DependentUpon>FrmQB_QYMC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_QYMCPZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_QYMCPZ.Designer.cs">
+      <DependentUpon>FrmQB_QYMCPZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_QYMC_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_QYMC_EDIT.Designer.cs">
+      <DependentUpon>FrmQB_QYMC_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_SCGZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_SCGZ.Designer.cs">
+      <DependentUpon>FrmQB_SCGZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_SELECT_GZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_SELECT_GZ.Designer.cs">
+      <DependentUpon>FrmQB_SELECT_GZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_SELECT_KDXX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_SELECT_KDXX.Designer.cs">
+      <DependentUpon>FrmQB_SELECT_KDXX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_SELECT_WL_ZXBZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_SELECT_WL_ZXBZ.Designer.cs">
+      <DependentUpon>FrmQB_SELECT_WL_ZXBZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_SELECT_ZXBZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_SELECT_ZXBZ.Designer.cs">
+      <DependentUpon>FrmQB_SELECT_ZXBZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_SYSBWH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_SYSBWH.Designer.cs">
+      <DependentUpon>FrmQB_SYSBWH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_SYSBWH_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_SYSBWH_EDIT.Designer.cs">
+      <DependentUpon>FrmQB_SYSBWH_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_WLJYDX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_WLJYDX.Designer.cs">
+      <DependentUpon>FrmQB_WLJYDX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_WLJYXMFZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_WLJYXMFZ.Designer.cs">
+      <DependentUpon>FrmQB_WLJYXMFZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_WLJYXMFZ_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_WLJYXMFZ_EDIT.Designer.cs">
+      <DependentUpon>FrmQB_WLJYXMFZ_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_WLJYXMPZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_WLJYXMPZ.Designer.cs">
+      <DependentUpon>FrmQB_WLJYXMPZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_XMGYWH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_XMGYWH.Designer.cs">
+      <DependentUpon>FrmQB_XMGYWH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_XMGYWH_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_XMGYWH_EDIT.Designer.cs">
+      <DependentUpon>FrmQB_XMGYWH_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_XMYQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_XMYQ.Designer.cs">
+      <DependentUpon>FrmQB_XMYQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_XMYQ_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_XMYQ_EDIT.Designer.cs">
+      <DependentUpon>FrmQB_XMYQ_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_XNJYGC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_XNJYGC.Designer.cs">
+      <DependentUpon>FrmQB_XNJYGC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_XNJYGC_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_XNJYGC_EDIT.Designer.cs">
+      <DependentUpon>FrmQB_XNJYGC_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_XN_SHR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_XN_SHR.Designer.cs">
+      <DependentUpon>FrmQB_XN_SHR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_ZLSJBG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_ZLSJBG.Designer.cs">
+      <DependentUpon>FrmQB_ZLSJBG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_ZLSJBGJG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_ZLSJBGJG.Designer.cs">
+      <DependentUpon>FrmQB_ZLSJBGJG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_ZLSJJG_GP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_ZLSJJG_GP.Designer.cs">
+      <DependentUpon>FrmQB_ZLSJJG_GP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_ZLSJJG_XC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_ZLSJJG_XC.Designer.cs">
+      <DependentUpon>FrmQB_ZLSJJG_XC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_ZXBZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_ZXBZ.Designer.cs">
+      <DependentUpon>FrmQB_ZXBZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_LCP_ADD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_LCP_ADD.Designer.cs">
+      <DependentUpon>FrmQB_LCP_ADD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_SELECT_WL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_SELECT_WL.Designer.cs">
+      <DependentUpon>FrmQB_SELECT_WL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_ZXBZWH_ADD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_ZXBZWH_ADD.Designer.cs">
+      <DependentUpon>FrmQB_ZXBZWH_ADD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_ZXBZWH_Copy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_ZXBZWH_Copy.Designer.cs">
+      <DependentUpon>FrmQB_ZXBZWH_Copy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_ZXBZWH_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_ZXBZWH_Edit.Designer.cs">
+      <DependentUpon>FrmQB_ZXBZWH_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_ZXBZ_WLXN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_ZXBZ_WLXN.Designer.cs">
+      <DependentUpon>FrmQB_ZXBZ_WLXN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_ZZS_DY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_ZZS_DY.Designer.cs">
+      <DependentUpon>FrmQB_ZZS_DY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QB\FrmQB_ZZS_MB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QB\FrmQB_ZZS_MB.Designer.cs">
+      <DependentUpon>FrmQB_ZZS_MB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_CFPD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_CFPD.Designer.cs">
+      <DependentUpon>FrmQC_CFPD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_CFPD_TP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_CFPD_TP.Designer.cs">
+      <DependentUpon>FrmQC_CFPD_TP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_GPGP_TP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_GPGP_TP.Designer.cs">
+      <DependentUpon>FrmQC_GPGP_TP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_PJGX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_PJGX.Designer.cs">
+      <DependentUpon>FrmQC_PJGX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_PJGXWH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_PJGXWH.Designer.cs">
+      <DependentUpon>FrmQC_PJGXWH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_PJGXWH_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_PJGXWH_Edit.Designer.cs">
+      <DependentUpon>FrmQC_PJGXWH_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_SELECT_CFXN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_SELECT_CFXN.Designer.cs">
+      <DependentUpon>FrmQC_SELECT_CFXN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_CCDDY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_CCDDY.Designer.cs">
+      <DependentUpon>FrmQC_CCDDY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_CCSYGL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_CCSYGL.Designer.cs">
+      <DependentUpon>FrmQC_CCSYGL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_CFCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_CFCX.Designer.cs">
+      <DependentUpon>FrmQC_CFCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_CFLR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_CFLR.Designer.cs">
+      <DependentUpon>FrmQC_CFLR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_CFXN_ADD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_CFXN_ADD.Designer.cs">
+      <DependentUpon>FrmQC_CFXN_ADD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_CGSYGL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_CGSYGL.Designer.cs">
+      <DependentUpon>FrmQC_CGSYGL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_CGSYGL_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_CGSYGL_Add.Designer.cs">
+      <DependentUpon>FrmQC_CGSYGL_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_FJGL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_FJGL.Designer.cs">
+      <DependentUpon>FrmQC_FJGL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_FJQR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_FJQR.Designer.cs">
+      <DependentUpon>FrmQC_FJQR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_GH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_GH.Designer.cs">
+      <DependentUpon>FrmQC_GH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_GPBMPD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_GPBMPD.Designer.cs">
+      <DependentUpon>FrmQC_GPBMPD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_GPGP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_GPGP.Designer.cs">
+      <DependentUpon>FrmQC_GPGP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_GPGP_OLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_GPGP_OLD.Designer.cs">
+      <DependentUpon>FrmQC_GPGP_OLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_GPKJGL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_GPKJGL.Designer.cs">
+      <DependentUpon>FrmQC_GPKJGL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_GPKJQR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_GPKJQR.Designer.cs">
+      <DependentUpon>FrmQC_GPKJQR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_GPZHPD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_GPZHPD.Designer.cs">
+      <DependentUpon>FrmQC_GPZHPD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_JSSY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_JSSY.Designer.cs">
+      <DependentUpon>FrmQC_JSSY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_JSSY_COPY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_JSSY_COPY.Designer.cs">
+      <DependentUpon>FrmQC_JSSY_COPY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_JSSY_COPY_NEW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_JSSY_COPY_NEW.Designer.cs">
+      <DependentUpon>FrmQC_JSSY_COPY_NEW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_JSSY_JSZX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_JSSY_JSZX.Designer.cs">
+      <DependentUpon>FrmQC_JSSY_JSZX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_SELECT_WL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_SELECT_WL.Designer.cs">
+      <DependentUpon>FrmQC_SELECT_WL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_SYGL_JSZX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_SYGL_JSZX.Designer.cs">
+      <DependentUpon>FrmQC_SYGL_JSZX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_TPGP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_TPGP.Designer.cs">
+      <DependentUpon>FrmQC_TPGP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_TPGPSH_JSZX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_TPGPSH_JSZX.Designer.cs">
+      <DependentUpon>FrmQC_TPGPSH_JSZX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_TPGPSH_LG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_TPGPSH_LG.Designer.cs">
+      <DependentUpon>FrmQC_TPGPSH_LG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_TPGPSH_Select.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_TPGPSH_Select.Designer.cs">
+      <DependentUpon>FrmQC_TPGPSH_Select.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_TPGPSH_XC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_TPGPSH_XC.Designer.cs">
+      <DependentUpon>FrmQC_TPGPSH_XC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_TPGPSH_ZKB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_TPGPSH_ZKB.Designer.cs">
+      <DependentUpon>FrmQC_TPGPSH_ZKB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_TSXX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_TSXX.Designer.cs">
+      <DependentUpon>FrmQC_TSXX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_TSXXWH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_TSXXWH.Designer.cs">
+      <DependentUpon>FrmQC_TSXXWH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_XCBMPD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_XCBMPD.Designer.cs">
+      <DependentUpon>FrmQC_XCBMPD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_XCGP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_XCGP.Designer.cs">
+      <DependentUpon>FrmQC_XCGP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_XCGP_WW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_XCGP_WW.Designer.cs">
+      <DependentUpon>FrmQC_XCGP_WW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_XCKJGL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_XCKJGL.Designer.cs">
+      <DependentUpon>FrmQC_XCKJGL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_XCKJQR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_XCKJQR.Designer.cs">
+      <DependentUpon>FrmQC_XCKJQR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_XCZHPD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_XCZHPD.Designer.cs">
+      <DependentUpon>FrmQC_XCZHPD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_XLSQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_XLSQ.Designer.cs">
+      <DependentUpon>FrmQC_XLSQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_XLSQ_HL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_XLSQ_HL.Designer.cs">
+      <DependentUpon>FrmQC_XLSQ_HL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_XLSQ_JL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_XLSQ_JL.Designer.cs">
+      <DependentUpon>FrmQC_XLSQ_JL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_XLSQ_JL_QR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_XLSQ_JL_QR.Designer.cs">
+      <DependentUpon>FrmQC_XLSQ_JL_QR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_XLSQ_QR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_XLSQ_QR.Designer.cs">
+      <DependentUpon>FrmQC_XLSQ_QR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_XLSQ_Select.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_XLSQ_Select.Designer.cs">
+      <DependentUpon>FrmQC_XLSQ_Select.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_XLSQ_ZL_QR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_XLSQ_ZL_QR.Designer.cs">
+      <DependentUpon>FrmQC_XLSQ_ZL_QR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_XNGCLWH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_XNGCLWH.Designer.cs">
+      <DependentUpon>FrmQC_XNGCLWH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_XNJGQR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_XNJGQR.Designer.cs">
+      <DependentUpon>FrmQC_XNJGQR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_XNLR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_XNLR.Designer.cs">
+      <DependentUpon>FrmQC_XNLR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_XNLR_COPY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_XNLR_COPY.Designer.cs">
+      <DependentUpon>FrmQC_XNLR_COPY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_XNLR_Excel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_XNLR_Excel.Designer.cs">
+      <DependentUpon>FrmQC_XNLR_Excel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_XNLR_OLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_XNLR_OLD.Designer.cs">
+      <DependentUpon>FrmQC_XNLR_OLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_XNLR_ZPFZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_XNLR_ZPFZ.Designer.cs">
+      <DependentUpon>FrmQC_XNLR_ZPFZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_XNTB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_XNTB.Designer.cs">
+      <DependentUpon>FrmQC_XNTB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_XN_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_XN_EDIT.Designer.cs">
+      <DependentUpon>FrmQC_XN_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_XN_EDIT_CWSX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_XN_EDIT_CWSX.Designer.cs">
+      <DependentUpon>FrmQC_XN_EDIT_CWSX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_ZBSDY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_ZBSDY.Designer.cs">
+      <DependentUpon>FrmQC_ZBSDY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_ZCJC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_ZCJC.Designer.cs">
+      <DependentUpon>FrmQC_ZCJC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_ZCJC_EDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_ZCJC_EDIT.Designer.cs">
+      <DependentUpon>FrmQC_ZCJC_EDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_ZGJHZP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_ZGJHZP.Designer.cs">
+      <DependentUpon>FrmQC_ZGJHZP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_ZYGL_JSZX_OLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_ZYGL_JSZX_OLD.Designer.cs">
+      <DependentUpon>FrmQC_ZYGL_JSZX_OLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\FrmQC_ZYGL_OLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\FrmQC_ZYGL_OLD.Designer.cs">
+      <DependentUpon>FrmQC_ZYGL_OLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QR\DataSet_XC_TD.cs">
+      <DependentUpon>DataSet_XC_TD.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QR\DataSet_XC_TD.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_XC_TD.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QR\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QR\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QR\FrmQC_GPZHPD_CX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QR\FrmQC_GPZHPD_CX.Designer.cs">
+      <DependentUpon>FrmQC_GPZHPD_CX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QR\FrmQR_CKCF_CX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QR\FrmQR_CKCF_CX.Designer.cs">
+      <DependentUpon>FrmQR_CKCF_CX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QR\FrmQR_CF_CX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QR\FrmQR_CF_CX.Designer.cs">
+      <DependentUpon>FrmQR_CF_CX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QR\FrmQR_CFXN_CX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QR\FrmQR_CFXN_CX.Designer.cs">
+      <DependentUpon>FrmQR_CFXN_CX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QR\FrmQR_CKCZSCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QR\FrmQR_CKCZSCX.Designer.cs">
+      <DependentUpon>FrmQR_CKCZSCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QR\FrmQR_GP_KC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QR\FrmQR_GP_KC.Designer.cs">
+      <DependentUpon>FrmQR_GP_KC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QR\FrmQR_PD_RESULT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QR\FrmQR_PD_RESULT.Designer.cs">
+      <DependentUpon>FrmQR_PD_RESULT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QR\FrmQR_TM_NC_PCI_KC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QR\FrmQR_TM_NC_PCI_KC.Designer.cs">
+      <DependentUpon>FrmQR_TM_NC_PCI_KC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QR\FrmQR_TSXX_LOG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QR\FrmQR_TSXX_LOG.Designer.cs">
+      <DependentUpon>FrmQR_TSXX_LOG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QR\FrmQR_XNCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QR\FrmQR_XNCX.Designer.cs">
+      <DependentUpon>FrmQR_XNCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QR\FrmQR_XCZHPD_CX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QR\FrmQR_XCZHPD_CX.Designer.cs">
+      <DependentUpon>FrmQR_XCZHPD_CX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QR\FrmQR_ANQX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QR\FrmQR_ANQX.Designer.cs">
+      <DependentUpon>FrmQR_ANQX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QR\FrmQR_BLPTJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QR\FrmQR_BLPTJ.Designer.cs">
+      <DependentUpon>FrmQR_BLPTJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QR\FrmQR_GPBMPDCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QR\FrmQR_GPBMPDCX.Designer.cs">
+      <DependentUpon>FrmQR_GPBMPDCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QR\FrmQR_GPGPCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QR\FrmQR_GPGPCX.Designer.cs">
+      <DependentUpon>FrmQR_GPGPCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QR\FrmQR_GPKJCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QR\FrmQR_GPKJCX.Designer.cs">
+      <DependentUpon>FrmQR_GPKJCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QR\FrmQR_SYJJJL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QR\FrmQR_SYJJJL.Designer.cs">
+      <DependentUpon>FrmQR_SYJJJL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QR\FrmQR_XCGPCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QR\FrmQR_XCGPCX.Designer.cs">
+      <DependentUpon>FrmQR_XCGPCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QR\FrmQR_XCKJCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QR\FrmQR_XCKJCX.Designer.cs">
+      <DependentUpon>FrmQR_XCKJCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QR\FrmQR_XCSJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QR\FrmQR_XCSJ.Designer.cs">
+      <DependentUpon>FrmQR_XCSJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QR\FrmQR_ZZS_TD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QR\FrmQR_ZZS_TD.Designer.cs">
+      <DependentUpon>FrmQR_ZZS_TD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QR\XtraReport_TD.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="QR\XtraReport_TD.Designer.cs">
+      <DependentUpon>XtraReport_TD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QR\XtraReport_XC_TD.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="QR\XtraReport_XC_TD.Designer.cs">
+      <DependentUpon>XtraReport_XC_TD.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="QB\FrmQB_BHGYY.resx">
+      <DependentUpon>FrmQB_BHGYY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_BZDR.resx">
+      <DependentUpon>FrmQB_BZDR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_BZLB.resx">
+      <DependentUpon>FrmQB_BZLB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_BZLB_EDIT.resx">
+      <DependentUpon>FrmQB_BZLB_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_BZWDCX.resx">
+      <DependentUpon>FrmQB_BZWDCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_BZWDLB.resx">
+      <DependentUpon>FrmQB_BZWDLB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_BZWDLB_EDIT.resx">
+      <DependentUpon>FrmQB_BZWDLB_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_BZWDSC.resx">
+      <DependentUpon>FrmQB_BZWDSC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_BZYQ.resx">
+      <DependentUpon>FrmQB_BZYQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_BZYQ_EDIT.resx">
+      <DependentUpon>FrmQB_BZYQ_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_BZ_ZYX.resx">
+      <DependentUpon>FrmQB_BZ_ZYX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_DZGPPP.resx">
+      <DependentUpon>FrmQB_DZGPPP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_GPDCPP.resx">
+      <DependentUpon>FrmQB_GPDCPP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_GPDCPP_NEW.resx">
+      <DependentUpon>FrmQB_GPDCPP_NEW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_GPDCWH.resx">
+      <DependentUpon>FrmQB_GPDCWH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_GPDCWH_EDIT.resx">
+      <DependentUpon>FrmQB_GPDCWH_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_GPDZ.resx">
+      <DependentUpon>FrmQB_GPDZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_GYLX.resx">
+      <DependentUpon>FrmQB_GYLX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_GYLX_EDIT.resx">
+      <DependentUpon>FrmQB_GYLX_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_GZPMWH.resx">
+      <DependentUpon>FrmQB_GZPMWH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_GZPMWH_EDIT.resx">
+      <DependentUpon>FrmQB_GZPMWH_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_GZPZWH.resx">
+      <DependentUpon>FrmQB_GZPZWH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_GZPZWH_EDIT.resx">
+      <DependentUpon>FrmQB_GZPZWH_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_GZSCGZ.resx">
+      <DependentUpon>FrmQB_GZSCGZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_HLGYWH.resx">
+      <DependentUpon>FrmQB_HLGYWH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_HLGYWH_EDIT.resx">
+      <DependentUpon>FrmQB_HLGYWH_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_HLYQ.resx">
+      <DependentUpon>FrmQB_HLYQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_HLYQ_EDIT.resx">
+      <DependentUpon>FrmQB_HLYQ_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_JCSJ.resx">
+      <DependentUpon>FrmQB_JCSJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_JCSJ_EDIT.resx">
+      <DependentUpon>FrmQB_JCSJ_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_JYLB.resx">
+      <DependentUpon>FrmQB_JYLB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_JYLB_EDIT.resx">
+      <DependentUpon>FrmQB_JYLB_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_KPJRLSJ.resx">
+      <DependentUpon>FrmQB_KPJRLSJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_LCP.resx">
+      <DependentUpon>FrmQB_LCP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_PJZZ.resx">
+      <DependentUpon>FrmQB_PJZZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_QYMB_Add_MAIN_JSZX.resx">
+      <DependentUpon>FrmQB_QYMB_Add_MAIN_JSZX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_QYMB_JSZX.resx">
+      <DependentUpon>FrmQB_QYMB_JSZX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_QYMB.resx">
+      <DependentUpon>FrmQB_QYMB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_QYMB_Add_MAIN.resx">
+      <DependentUpon>FrmQB_QYMB_Add_MAIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_QYMC.resx">
+      <DependentUpon>FrmQB_QYMC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_QYMCPZ.resx">
+      <DependentUpon>FrmQB_QYMCPZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_QYMC_EDIT.resx">
+      <DependentUpon>FrmQB_QYMC_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_SCGZ.resx">
+      <DependentUpon>FrmQB_SCGZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_SELECT_GZ.resx">
+      <DependentUpon>FrmQB_SELECT_GZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_SELECT_KDXX.resx">
+      <DependentUpon>FrmQB_SELECT_KDXX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_SELECT_WL_ZXBZ.resx">
+      <DependentUpon>FrmQB_SELECT_WL_ZXBZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_SELECT_ZXBZ.resx">
+      <DependentUpon>FrmQB_SELECT_ZXBZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_SYSBWH.resx">
+      <DependentUpon>FrmQB_SYSBWH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_SYSBWH_EDIT.resx">
+      <DependentUpon>FrmQB_SYSBWH_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_WLJYDX.resx">
+      <DependentUpon>FrmQB_WLJYDX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_WLJYXMFZ.resx">
+      <DependentUpon>FrmQB_WLJYXMFZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_WLJYXMFZ_EDIT.resx">
+      <DependentUpon>FrmQB_WLJYXMFZ_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_WLJYXMPZ.resx">
+      <DependentUpon>FrmQB_WLJYXMPZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_XMGYWH.resx">
+      <DependentUpon>FrmQB_XMGYWH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_XMGYWH_EDIT.resx">
+      <DependentUpon>FrmQB_XMGYWH_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_XMYQ.resx">
+      <DependentUpon>FrmQB_XMYQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_XMYQ_EDIT.resx">
+      <DependentUpon>FrmQB_XMYQ_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_XNJYGC.resx">
+      <DependentUpon>FrmQB_XNJYGC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_XNJYGC_EDIT.resx">
+      <DependentUpon>FrmQB_XNJYGC_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_XN_SHR.resx">
+      <DependentUpon>FrmQB_XN_SHR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_ZLSJBG.resx">
+      <DependentUpon>FrmQB_ZLSJBG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_ZLSJBGJG.resx">
+      <DependentUpon>FrmQB_ZLSJBGJG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_ZLSJJG_GP.resx">
+      <DependentUpon>FrmQB_ZLSJJG_GP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_ZLSJJG_XC.resx">
+      <DependentUpon>FrmQB_ZLSJJG_XC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_ZXBZ.resx">
+      <DependentUpon>FrmQB_ZXBZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_LCP_ADD.resx">
+      <DependentUpon>FrmQB_LCP_ADD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_SELECT_WL.resx">
+      <DependentUpon>FrmQB_SELECT_WL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_ZXBZWH_ADD.resx">
+      <DependentUpon>FrmQB_ZXBZWH_ADD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_ZXBZWH_Copy.resx">
+      <DependentUpon>FrmQB_ZXBZWH_Copy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_ZXBZWH_Edit.resx">
+      <DependentUpon>FrmQB_ZXBZWH_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_ZXBZ_WLXN.resx">
+      <DependentUpon>FrmQB_ZXBZ_WLXN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_ZZS_DY.resx">
+      <DependentUpon>FrmQB_ZZS_DY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QB\FrmQB_ZZS_MB.resx">
+      <DependentUpon>FrmQB_ZZS_MB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_CFPD.resx">
+      <DependentUpon>FrmQC_CFPD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_CFPD_TP.resx">
+      <DependentUpon>FrmQC_CFPD_TP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_GPGP_TP.resx">
+      <DependentUpon>FrmQC_GPGP_TP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_PJGX.resx">
+      <DependentUpon>FrmQC_PJGX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_PJGXWH.resx">
+      <DependentUpon>FrmQC_PJGXWH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_PJGXWH_Edit.resx">
+      <DependentUpon>FrmQC_PJGXWH_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_SELECT_CFXN.resx">
+      <DependentUpon>FrmQC_SELECT_CFXN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_CCDDY.resx">
+      <DependentUpon>FrmQC_CCDDY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_CCSYGL.resx">
+      <DependentUpon>FrmQC_CCSYGL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_CFCX.resx">
+      <DependentUpon>FrmQC_CFCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_CFLR.resx">
+      <DependentUpon>FrmQC_CFLR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_CFXN_ADD.resx">
+      <DependentUpon>FrmQC_CFXN_ADD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_CGSYGL.resx">
+      <DependentUpon>FrmQC_CGSYGL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_CGSYGL_Add.resx">
+      <DependentUpon>FrmQC_CGSYGL_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_FJGL.resx">
+      <DependentUpon>FrmQC_FJGL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_FJQR.resx">
+      <DependentUpon>FrmQC_FJQR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_GH.resx">
+      <DependentUpon>FrmQC_GH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_GPBMPD.resx">
+      <DependentUpon>FrmQC_GPBMPD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_GPGP.resx">
+      <DependentUpon>FrmQC_GPGP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_GPGP_OLD.resx">
+      <DependentUpon>FrmQC_GPGP_OLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_GPKJGL.resx">
+      <DependentUpon>FrmQC_GPKJGL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_GPKJQR.resx">
+      <DependentUpon>FrmQC_GPKJQR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_GPZHPD.resx">
+      <DependentUpon>FrmQC_GPZHPD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_JSSY.resx">
+      <DependentUpon>FrmQC_JSSY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_JSSY_COPY.resx">
+      <DependentUpon>FrmQC_JSSY_COPY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_JSSY_COPY_NEW.resx">
+      <DependentUpon>FrmQC_JSSY_COPY_NEW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_JSSY_JSZX.resx">
+      <DependentUpon>FrmQC_JSSY_JSZX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_SELECT_WL.resx">
+      <DependentUpon>FrmQC_SELECT_WL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_SYGL_JSZX.resx">
+      <DependentUpon>FrmQC_SYGL_JSZX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_TPGP.resx">
+      <DependentUpon>FrmQC_TPGP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_TPGPSH_JSZX.resx">
+      <DependentUpon>FrmQC_TPGPSH_JSZX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_TPGPSH_LG.resx">
+      <DependentUpon>FrmQC_TPGPSH_LG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_TPGPSH_Select.resx">
+      <DependentUpon>FrmQC_TPGPSH_Select.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_TPGPSH_XC.resx">
+      <DependentUpon>FrmQC_TPGPSH_XC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_TPGPSH_ZKB.resx">
+      <DependentUpon>FrmQC_TPGPSH_ZKB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_TSXX.resx">
+      <DependentUpon>FrmQC_TSXX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_TSXXWH.resx">
+      <DependentUpon>FrmQC_TSXXWH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_XCBMPD.resx">
+      <DependentUpon>FrmQC_XCBMPD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_XCGP.resx">
+      <DependentUpon>FrmQC_XCGP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_XCGP_WW.resx">
+      <DependentUpon>FrmQC_XCGP_WW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_XCKJGL.resx">
+      <DependentUpon>FrmQC_XCKJGL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_XCKJQR.resx">
+      <DependentUpon>FrmQC_XCKJQR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_XCZHPD.resx">
+      <DependentUpon>FrmQC_XCZHPD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_XLSQ.resx">
+      <DependentUpon>FrmQC_XLSQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_XLSQ_HL.resx">
+      <DependentUpon>FrmQC_XLSQ_HL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_XLSQ_JL.resx">
+      <DependentUpon>FrmQC_XLSQ_JL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_XLSQ_JL_QR.resx">
+      <DependentUpon>FrmQC_XLSQ_JL_QR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_XLSQ_QR.resx">
+      <DependentUpon>FrmQC_XLSQ_QR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_XLSQ_Select.resx">
+      <DependentUpon>FrmQC_XLSQ_Select.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_XLSQ_ZL_QR.resx">
+      <DependentUpon>FrmQC_XLSQ_ZL_QR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_XNGCLWH.resx">
+      <DependentUpon>FrmQC_XNGCLWH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_XNJGQR.resx">
+      <DependentUpon>FrmQC_XNJGQR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_XNLR.resx">
+      <DependentUpon>FrmQC_XNLR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_XNLR_COPY.resx">
+      <DependentUpon>FrmQC_XNLR_COPY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_XNLR_Excel.resx">
+      <DependentUpon>FrmQC_XNLR_Excel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_XNLR_OLD.resx">
+      <DependentUpon>FrmQC_XNLR_OLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_XNLR_ZPFZ.resx">
+      <DependentUpon>FrmQC_XNLR_ZPFZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_XNTB.resx">
+      <DependentUpon>FrmQC_XNTB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_XN_EDIT.resx">
+      <DependentUpon>FrmQC_XN_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_XN_EDIT_CWSX.resx">
+      <DependentUpon>FrmQC_XN_EDIT_CWSX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_ZBSDY.resx">
+      <DependentUpon>FrmQC_ZBSDY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_ZCJC.resx">
+      <DependentUpon>FrmQC_ZCJC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_ZCJC_EDIT.resx">
+      <DependentUpon>FrmQC_ZCJC_EDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_ZGJHZP.resx">
+      <DependentUpon>FrmQC_ZGJHZP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_ZYGL_JSZX_OLD.resx">
+      <DependentUpon>FrmQC_ZYGL_JSZX_OLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\FrmQC_ZYGL_OLD.resx">
+      <DependentUpon>FrmQC_ZYGL_OLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QR\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QR\FrmQC_GPZHPD_CX.resx">
+      <DependentUpon>FrmQC_GPZHPD_CX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QR\FrmQR_CKCF_CX.resx">
+      <DependentUpon>FrmQR_CKCF_CX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QR\FrmQR_CF_CX.resx">
+      <DependentUpon>FrmQR_CF_CX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QR\FrmQR_CFXN_CX.resx">
+      <DependentUpon>FrmQR_CFXN_CX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QR\FrmQR_CKCZSCX.resx">
+      <DependentUpon>FrmQR_CKCZSCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QR\FrmQR_GP_KC.resx">
+      <DependentUpon>FrmQR_GP_KC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QR\FrmQR_PD_RESULT.resx">
+      <DependentUpon>FrmQR_PD_RESULT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QR\FrmQR_TM_NC_PCI_KC.resx">
+      <DependentUpon>FrmQR_TM_NC_PCI_KC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QR\FrmQR_TSXX_LOG.resx">
+      <DependentUpon>FrmQR_TSXX_LOG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QR\FrmQR_XNCX.resx">
+      <DependentUpon>FrmQR_XNCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QR\FrmQR_XCZHPD_CX.resx">
+      <DependentUpon>FrmQR_XCZHPD_CX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QR\FrmQR_ANQX.resx">
+      <DependentUpon>FrmQR_ANQX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QR\FrmQR_BLPTJ.resx">
+      <DependentUpon>FrmQR_BLPTJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QR\FrmQR_GPBMPDCX.resx">
+      <DependentUpon>FrmQR_GPBMPDCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QR\FrmQR_GPGPCX.resx">
+      <DependentUpon>FrmQR_GPGPCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QR\FrmQR_GPKJCX.resx">
+      <DependentUpon>FrmQR_GPKJCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QR\FrmQR_SYJJJL.resx">
+      <DependentUpon>FrmQR_SYJJJL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QR\FrmQR_XCGPCX.resx">
+      <DependentUpon>FrmQR_XCGPCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QR\FrmQR_XCKJCX.resx">
+      <DependentUpon>FrmQR_XCKJCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QR\FrmQR_XCSJ.resx">
+      <DependentUpon>FrmQR_XCSJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QR\FrmQR_ZZS_TD.resx">
+      <DependentUpon>FrmQR_ZZS_TD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QR\XtraReport_TD.resx">
+      <DependentUpon>XtraReport_TD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QR\XtraReport_XC_TD.resx">
+      <DependentUpon>XtraReport_XC_TD.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{15b3290b-9a04-4a98-bdba-f378b2504706}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{e3d8759a-c5eb-402d-9f10-f5c6029a8d1a}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MODEL\MODEL.csproj">
+      <Project>{5ad207cc-7fa4-4b7c-bbe5-5ef48beaf9ea}</Project>
+      <Name>MODEL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="QR\DataSet_XC_TD.xsc">
+      <DependentUpon>DataSet_XC_TD.xsd</DependentUpon>
+    </None>
+    <None Include="QR\DataSet_XC_TD.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_XC_TD.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="QR\DataSet_XC_TD.xss">
+      <DependentUpon>DataSet_XC_TD.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

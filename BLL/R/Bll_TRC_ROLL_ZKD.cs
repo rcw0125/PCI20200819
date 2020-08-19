@@ -1,0 +1,156 @@
+﻿using System;
+using System.Data;
+using System.Collections.Generic;
+using DAL;
+using MODEL;
+namespace BLL
+{
+
+    /// <summary>
+    /// 线材转库单
+    /// </summary>
+    public partial class Bll_TRC_ROLL_ZKD
+    {
+        private readonly Dal_TRC_ROLL_ZKD dal = new Dal_TRC_ROLL_ZKD();
+        public Bll_TRC_ROLL_ZKD()
+        { }
+        #region  BasicMethod
+        /// <summary>
+        /// 是否存在该记录
+        /// </summary>
+        public bool Exists(string C_ID)
+        {
+            return dal.Exists(C_ID);
+        }
+
+        /// <summary>
+        /// 增加一条数据
+        /// </summary>
+        public bool Add(Mod_TRC_ROLL_ZKD model)
+        {
+            return dal.Add(model);
+        }
+
+        /// <summary>
+        /// 更新一条数据
+        /// </summary>
+        public bool Update(Mod_TRC_ROLL_ZKD model)
+        {
+            return dal.Update(model);
+        }
+
+        /// <summary>
+        /// 删除一条数据
+        /// </summary>
+        public bool Delete(string C_ID)
+        {
+
+            return dal.Delete(C_ID);
+        }
+        /// <summary>
+        /// 删除一条数据
+        /// </summary>
+        public bool DeleteList(string C_IDlist)
+        {
+            return dal.DeleteList(C_IDlist);
+        }
+
+        /// <summary>
+        /// 得到一个对象实体
+        /// </summary>
+        public Mod_TRC_ROLL_ZKD GetModel(string C_ID)
+        {
+
+            return dal.GetModel(C_ID);
+        }
+
+
+
+        /// <summary>
+        /// 获得数据列表
+        /// </summary>
+        public DataSet GetList(string strWhere)
+        {
+            return dal.GetList(strWhere);
+        }
+        /// <summary>
+        /// 获得数据列表
+        /// </summary>
+        public List<Mod_TRC_ROLL_ZKD> GetModelList(string strWhere)
+        {
+            DataSet ds = dal.GetList(strWhere);
+            return DataTableToList(ds.Tables[0]);
+        }
+        /// <summary>
+        /// 获得数据列表
+        /// </summary>
+        public List<Mod_TRC_ROLL_ZKD> DataTableToList(DataTable dt)
+        {
+            List<Mod_TRC_ROLL_ZKD> modelList = new List<Mod_TRC_ROLL_ZKD>();
+            int rowsCount = dt.Rows.Count;
+            if (rowsCount > 0)
+            {
+                Mod_TRC_ROLL_ZKD model;
+                for (int n = 0; n < rowsCount; n++)
+                {
+                    model = dal.DataRowToModel(dt.Rows[n]);
+                    if (model != null)
+                    {
+                        modelList.Add(model);
+                    }
+                }
+            }
+            return modelList;
+        }
+
+        /// <summary>
+        /// 获得数据列表
+        /// </summary>
+        public DataSet GetAllList()
+        {
+            return GetList("");
+        }
+
+        /// <summary>
+        /// 分页获取数据列表
+        /// </summary>
+        public int GetRecordCount(string strWhere)
+        {
+            return dal.GetRecordCount(strWhere);
+        }
+        /// <summary>
+        /// 分页获取数据列表
+        /// </summary>
+        public DataSet GetListByPage(string strWhere, string orderby, int startIndex, int endIndex)
+        {
+            return dal.GetListByPage(strWhere, orderby, startIndex, endIndex);
+        }
+        /// <summary>
+        /// 分页获取数据列表
+        /// </summary>
+        //public DataSet GetList(int PageSize,int PageIndex,string strWhere)
+        //{
+        //return dal.GetList(PageSize,PageIndex,strWhere);
+        //}
+
+        #endregion  BasicMethod
+        #region  ExtensionMethod
+        /// <summary>
+        /// 获取最新的转库单号
+        /// </summary>
+        /// <param name="C_ZKD_NO">转库单</param>
+        /// <returns></returns>
+        public long GetZKDNO(string C_ZKD_NO)
+        {
+            return dal.GetZKDNO(C_ZKD_NO);
+        }
+        /// <summary>
+        /// 获得数据列表通过idstr
+        /// </summary>
+        public DataSet GetListBydh(string dh)
+        {
+            return dal.GetListBydh(dh);
+        }
+        #endregion  ExtensionMethod
+    }
+}
